@@ -106,17 +106,17 @@ export default function PricingSection() {
     1: {
       3: { total: 30, mo: (39 / 3).toFixed(2) },
       6: { total: 45, mo: (49 / 6).toFixed(2) },
-      12: { total: 65, mo: (79 / 12).toFixed(2) },
+      12: { total: 69, mo: (79 / 12).toFixed(2) },
     },
     2: {
-      3: { total: 45, mo: (49 / 3).toFixed(2) },
-      6: { total: 60, mo: (79 / 6).toFixed(2) },
-      12: { total: 80, mo: (129 / 12).toFixed(2) },
+      3: { total: 49, mo: (49 / 3).toFixed(2) },
+      6: { total: 69, mo: (79 / 6).toFixed(2) },
+      12: { total: 99, mo: (129 / 12).toFixed(2) },
     },
     3: {
-      3: { total: 60, mo: (69 / 3).toFixed(2) },
-      6: { total: 75, mo: (119 / 6).toFixed(2) },
-      12: { total: 95, mo: (169 / 12).toFixed(2) },
+      3: { total: 69, mo: (69 / 3).toFixed(2) },
+      6: { total: 89, mo: (119 / 6).toFixed(2) },
+      12: { total: 139, mo: (169 / 12).toFixed(2) },
     },
   };
 
