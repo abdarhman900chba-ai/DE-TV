@@ -24,7 +24,7 @@ const PAGE_URL = `${SITE_URL}/rueckgabe`;
 // ---------------------------------------------------------------------------
 export const metadata = generateSEOMetadata(
   'Rückgabe & Garantie Policy',
-  `Lesen Sie die offiziellen Bedingungen der ${BRAND} 7-Tage-Qualitätsgarantie. Transparente technische Richtlinien und Support-Verfahren für deutsche, österreichische und schweizer Kunden.`,
+  `Erfahren Sie die genauen Bedingungen der ${BRAND} 7-Tage-Qualitätsgarantie. Transparente technische Richtlinien und Support-Abläufe für Kunden aus Deutschland, Österreich und der Schweiz.`,
   '/rueckgabe'
 );
 
@@ -132,7 +132,7 @@ export default function RefundPolicyPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-[#FFFFFF]/80 font-bold max-w-2xl mx-auto leading-relaxed">
-            {BRAND} liefert unvergleichliche Stabilität. Wir bieten eine transparente 7-Tage-Qualitätsgarantie auf alle aktiven Streaming-Verbindungen. Sollte der Service nicht wie versprochen funktionieren, machen wir es wieder gut.
+            {BRAND} steht für kompromisslose Stabilität. Deshalb gewähren wir eine transparente 7-Tage-Qualitätsgarantie auf sämtliche aktiven Streaming-Verbindungen. Sollte der Service nicht die zugesagte Leistung erbringen, sorgen wir für eine faire Lösung.
           </p>
 
           <p className="text-xs text-[#FFFFFF]/40 mt-4 font-bold uppercase tracking-wider">
@@ -162,7 +162,7 @@ export default function RefundPolicyPage() {
                 Unsere 7-Tage-Qualitätsgarantie
               </h2>
               <p className="text-[#0a0a0c] font-bold text-sm md:text-base leading-relaxed">
-                Wir liefern nur hochwertige 4K IPTV und Full HD Streams. Diese Garantie gilt für echte Service-Probleme, wie einen verifizierten technischen Defekt, den unser Support-Team nicht innerhalb des genannten Reparaturzeitraums beheben kann. Sie gilt nicht für Meinungsänderungen, persönliche Präferenzen oder Geräteprobleme auf Ihrer Seite.
+                Wir liefern ausschließlich hochwertige 4K IPTV und Full HD Streams. Diese Garantie greift bei echten Service-Problemen – etwa einem nachgewiesenen technischen Defekt, den unser Support-Team nicht innerhalb des genannten Reparaturfensters beheben kann. Nicht abgedeckt sind Meinungsänderungen, persönliche Vorlieben oder Geräteprobleme auf Ihrer Seite.
               </p>
             </div>
           </div>
@@ -178,14 +178,14 @@ export default function RefundPolicyPage() {
               1. Umfang der technischen Garantie
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Eine Rückerstattung wird nur gewährt, wenn der gelieferte Service strukturell und nachweislich nicht funktionsfähig ist, bedingt durch Ursachen in unserer Server-Infrastruktur. Folgende Bedingungen gelten kumulativ:
+              Eine Rückerstattung erfolgt ausschließlich dann, wenn der bereitgestellte Service strukturell und nachweisbar nicht funktionsfähig ist und die Ursache in unserer Server-Infrastruktur liegt. Dabei müssen die folgenden Bedingungen kumulativ erfüllt sein:
             </p>
             <ul className="space-y-3 mb-6">
               {[
-                'Die Meldung erfolgt schriftlich innerhalb von exakt 7 Kalendertagen nach dem ursprünglichen Kaufdatum.',
-                'Es liegt ein anhaltender, serverbedingter Ausfall vor, der verhindert, dass der Service wie beworben funktioniert.',
+                'Ihre Meldung geht schriftlich innerhalb von exakt 7 Kalendertagen nach dem ursprünglichen Kaufdatum bei uns ein.',
+                'Es besteht ein andauernder, serverbedingter Ausfall, durch den der Service nicht wie beworben nutzbar ist.',
                 'Unser 24/7 technischer Support hatte mindestens 24 Stunden Zeit, das gemeldete Verbindungsproblem zu beheben oder alternative Routings einzurichten.',
-                'Sie haben die von uns angeforderten Standard-Diagnoseschritte durchgeführt, wie einen Router-Neustart, App-Cache-Leerung und DNS-Prüfung.',
+                'Sie haben die von uns angeforderten Standard-Diagnoseschritte durchgeführt, wie Router-Neustart, Leeren des App-Cache und Prüfung der DNS-Einstellungen.',
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -218,19 +218,19 @@ export default function RefundPolicyPage() {
                 <div>
                   <ul className="space-y-2.5 text-[#0a0a0c] text-xs sm:text-sm font-bold leading-relaxed">
                     <li>
-                      • <strong>Meinungsänderung:</strong> Anfragen basierend auf Geschmack, Interface-Erfahrung oder dem bloßen Wegfall des Bedarfs am Abonnement.
+                      • <strong>Meinungsänderung:</strong> Anfragen, die auf Geschmack, Interface-Erfahrung oder dem bloßen Wegfall des Bedarfs am Abonnement beruhen.
                     </li>
                     <li>
-                      • <strong>Lokale Netzwerkeinschränkungen:</strong> Puffern verursacht durch instabile WLAN-Verbindung, lokale Netzwerküberlastung oder Internetgeschwindigkeiten unter 25 Mbit/s.
+                      • <strong>Lokale Netzwerkeinschränkungen:</strong> Puffern, das durch instabile WLAN-Verbindung, lokale Netzwerküberlastung oder Internetgeschwindigkeiten unter 25 Mbit/s entsteht.
                     </li>
                     <li>
                       • <strong>Geräte-Inkompatibilität:</strong> Probleme durch veraltete Smart TV Firmware, nicht unterstützte Drittanbieter-IPTV-Apps oder falsche lokale Konfiguration.
                     </li>
                     <li>
-                      • <strong>Senderänderungen:</strong> Vorübergehende Umstrukturierungen oder Änderungen einzelner Sender innerhalb der Zehntausenden verfügbaren Sender.
+                      • <strong>Senderänderungen:</strong> Vorübergehende Umstrukturierungen oder Anpassungen einzelner Sender innerhalb der Zehntausenden verfügbaren Sender.
                     </li>
                     <li>
-                      • <strong>Fair-Use-Verstöße:</strong> Konten, die automatisch blockiert wurden wegen Streaming auf mehr Geräten als gekauft.
+                      • <strong>Fair-Use-Verstöße:</strong> Konten, die wegen Nutzung auf mehr Geräten als gebucht automatisch gesperrt wurden.
                     </li>
                   </ul>
                 </div>
@@ -245,7 +245,7 @@ export default function RefundPolicyPage() {
               3. Verpflichtendes Diagnose- & Reparaturverfahren
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Bevor eine Rückerstattung autorisiert werden kann, führt unser Support-Team das folgende dreistufige Protokoll durch:
+              Bevor eine Rückerstattung autorisiert wird, durchläuft unser Support-Team das folgende dreistufige Protokoll:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -254,7 +254,7 @@ export default function RefundPolicyPage() {
                   <Wrench className="w-6 h-6 text-[#FFCE00] mx-auto mb-2" />
                   <h4 className="font-bold text-sm text-[#FFFFFF] mb-1">1. Line-Verifizierung</h4>
                   <p className="text-xs text-[#FFFFFF]/60 font-medium">
-                    Wir überprüfen Ihren Account-Token auf unseren aktiven Server-Ports.
+                    Wir prüfen Ihren Account-Token auf den aktiven Server-Ports.
                   </p>
                 </div>
               </div>
@@ -263,7 +263,7 @@ export default function RefundPolicyPage() {
                   <Wifi className="w-6 h-6 text-[#FFCE00] mx-auto mb-2" />
                   <h4 className="font-bold text-sm text-[#FFFFFF] mb-1">2. Server-Reset</h4>
                   <p className="text-xs text-[#FFFFFF]/60 font-medium">
-                    Wir leiten Ihr Streaming-Profil auf einen alternativen Frankfurt-Knoten um.
+                    Wir verlagern Ihr Streaming-Profil auf einen alternativen Frankfurt-Knoten.
                   </p>
                 </div>
               </div>
@@ -272,7 +272,7 @@ export default function RefundPolicyPage() {
                   <FileCheck className="w-6 h-6 text-[#FFCE00] mx-auto mb-2" />
                   <h4 className="font-bold text-sm text-[#FFFFFF] mb-1">3. Freigabe</h4>
                   <p className="text-xs text-[#FFFFFF]/60 font-medium">
-                    Bleibt der Ausfall unlösbar, folgt sofortige Rückerstattungsgenehmigung.
+                    Bleibt der Ausfall unlösbar, folgt die sofortige Rückerstattungsgenehmigung.
                   </p>
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function RefundPolicyPage() {
               4. Anfrageverfahren & Bearbeitungszeit
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-6">
-              Wenn Ihre Meldung die technischen Garantiebedingungen erfüllt, reichen Sie Ihre Anfrage über einen der untenstehenden Kanäle ein, inklusive Bestellnummer und einer kurzen Problembeschreibung:
+              Entspricht Ihre Meldung den technischen Garantiebedingungen, reichen Sie Ihre Anfrage über einen der unten genannten Kanäle ein – inklusive Bestellnummer und kurzer Problembeschreibung:
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
@@ -299,7 +299,7 @@ export default function RefundPolicyPage() {
                     WhatsApp Support (Schnellste)
                   </h3>
                   <p className="text-[#0a0a0c]/80 text-xs sm:text-sm font-bold leading-relaxed mb-4">
-                    Senden Sie Ihre Bestelldaten und einen Screenshot der Fehlermeldung für Echtzeit-Diagnose.
+                    Senden Sie Ihre Bestelldaten und einen Screenshot der Fehlermeldung für eine Echtzeit-Diagnose.
                   </p>
                 </div>
                 <a
@@ -348,7 +348,7 @@ export default function RefundPolicyPage() {
               Brauchen Sie Hilfe bei Ihrem Setup?
             </h3>
             <p className="text-[#DD0000] font-bold text-sm md:text-base max-w-md mx-auto mb-6">
-              In 99% der Fälle beheben unsere Streaming-Experten Pufferprobleme innerhalb von 2 Minuten.
+              In 99% der Fälle lösen unsere Streaming-Experten Pufferprobleme innerhalb von 2 Minuten.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md mx-auto">
               <Link

@@ -26,9 +26,6 @@ const SITE_URL = `https://${CONSTANTS.DOMAIN}`;
 const BRAND = CONSTANTS.BRAND_NAME;
 const PAGE_URL = `${SITE_URL}/faq`;
 
-// ---------------------------------------------------------------------------
-// SVG Flags — DE, AT, CH, UK (Deutschland First)
-// ---------------------------------------------------------------------------
 const FlagDE = () => (
   <svg className="w-5 h-5 rounded-full shadow-md shrink-0 border border-white/20" viewBox="0 0 32 32">
     <clipPath id="fq-de"><circle cx="16" cy="16" r="16" /></clipPath>
@@ -75,9 +72,6 @@ const FlagUK = () => (
   </svg>
 );
 
-// ---------------------------------------------------------------------------
-// TYPES + FAQ DATA — German
-// ---------------------------------------------------------------------------
 interface FAQItem {
   id: string;
   category: 'general' | 'sports' | 'devices' | 'billing';
@@ -86,42 +80,35 @@ interface FAQItem {
 }
 
 const faqList: FAQItem[] = [
-  // ALLGEMEIN
   { id: 'gen-1', category: 'general', q: 'Was ist IPTV und wie unterscheidet es sich von traditionellem Kabel-TV?', a: 'IPTV steht für Internet Protocol Television. Statt eines Koaxialkabels, Glasfaser-Receivers oder einer Satellitenschüssel werden die TV-Signale direkt über Ihre Internetverbindung gestreamt. Das bedeutet, dass keine physische Kabelbox benötigt wird. Sie können Tausende Sender in Full HD und 4K überall in Deutschland, Österreich und der Schweiz mit nur einer Internetverbindung anschauen.' },
-  { id: 'gen-2', category: 'general', q: 'Wie schnell werde ich nach der Zahlung eingerichtet?', a: 'Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, übernimmt unser Team das IPTV Deutschland Setup live mit Ihnen per WhatsApp. Wir senden Ihre Zugangsdaten, begleiten Sie durch die Installation einer App wie IPTV Extreme oder IBO Player Pro und senden die Testinhalte – alles im selben Chat. Die meisten Kunden streamen innerhalb von 10 Minuten.' },
+  { id: 'gen-2', category: 'general', q: 'Wie schnell werde ich nach der Zahlung eingerichtet?', a: 'Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, übernimmt unser Team das Setup live mit Ihnen per WhatsApp. Wir senden Ihre Zugangsdaten, begleiten Sie durch die Installation einer App und senden die Testinhalte – alles im selben Chat. Die meisten Kunden streamen innerhalb von 10 Minuten.' },
   { id: 'gen-3', category: 'general', q: 'Kann ich gleichzeitig auf mehreren TVs oder Geräten schauen?', a: 'Ja, abhängig von Ihrem Paket. Sie können beim Checkout 1, 2 oder 3 gleichzeitige Geräte auswählen. Das bedeutet, dass mehrere Haushaltsmitglieder gleichzeitig unterschiedliche Inhalte ohne Unterbrechung schauen können.' },
-  { id: 'gen-4', category: 'general', q: 'Wie funktioniert der kostenlose IPTV Test?', a: 'Schreiben Sie uns per WhatsApp und wir richten Ihnen einen kostenlosen 24-Stunden-Test ein. So können Sie die 4K IPTV Bildqualität prüfen, das Sport- und Filmangebot testen und sicherstellen, dass alles reibungslos auf Ihrem eigenen Gerät und Ihrer Internetverbindung läuft. Erst dann auf ein bezahltes Paket umschalten.' },
+  { id: 'gen-4', category: 'general', q: 'Wie funktioniert der kostenlose Test?', a: 'Schreiben Sie uns per WhatsApp und wir richten Ihnen einen kostenlosen Test ein. So können Sie die 4K Bildqualität prüfen und sicherstellen, dass alles reibungslos auf Ihrem eigenen Gerät und Ihrer Internetverbindung läuft. Erst dann auf ein bezahltes Paket umschalten.' },
   { id: 'gen-5', category: 'general', q: 'Bin ich an einen Vertrag oder eine automatische Verlängerung gebunden?', a: 'Nein, absolut nicht. Wir bieten Prepaid-Abonnements für 3, 6 oder 12 Monate. Wenn Ihr Zeitraum endet, stoppt die Streaming-Verbindung automatisch. Es gibt niemals automatische Abbuchungen oder stille Verlängerungen.' },
-  { id: 'gen-6', category: 'general', q: 'Kann ich den Dienst vor der Bezahlung testen?', a: 'Ja, genau so machen wir es. Kontaktieren Sie unser WhatsApp Support Team und wir geben Ihnen einen kostenlosen 24-Stunden-Test, damit Sie die Bildqualität auf Ihrem eigenen TV sehen können, bevor Sie sich für ein Abonnement entscheiden.' },
+  { id: 'gen-6', category: 'general', q: 'Kann ich den Dienst vor der Bezahlung testen?', a: 'Ja, genau so machen wir es. Kontaktieren Sie unser WhatsApp Support Team und wir geben Ihnen einen kostenlosen Test, damit Sie die Bildqualität sehen können, bevor Sie sich entscheiden.' },
 
-  // SPORT
-  { id: 'sport-1', category: 'sports', q: 'Sind Bundesliga, Champions League und Formel 1 enthalten?', a: 'Ja. Jedes Senderpaket enthält das komplette deutsche Sportprogramm in flüssiger 60FPS Qualität. Schauen Sie Bundesliga, Champions League, DFB-Pokal, Formel 1, DEL Eishockey, Handball-Bundesliga und große Kampfabende – alles inklusive.' },
-  { id: 'sport-2', category: 'sports', q: 'Zahle ich extra für UFC oder Box PPV Events?', a: 'Nein, alle weltweiten Pay-per-View Events sind standardmäßig enthalten. Das umfasst nummerierte UFC Main Cards, Championship Boxen, WWE Events, AEW und große MMA Events ohne zusätzliche Kosten.' },
-  { id: 'sport-3', category: 'sports', q: 'Haben ausländische Filme und Serien deutsche Untertitel?', a: 'Über 95% unseres kompletten VOD-Katalogs – mehr als 120.000 Filme und Serien von Netflix, HBO Max, Disney Plus und Kinoveröffentlichungen – enthält wählbare deutsche Untertitel und optionale Original-Tonspuren.' },
-  { id: 'sport-4', category: 'sports', q: 'Funktionieren EPG TV-Guide und Catch-Up-Funktion richtig?', a: 'Ja. Unser interaktiver EPG TV-Guide wird automatisch alle 6 Stunden mit dem aktuellen Programm synchronisiert. Für große deutsche, österreichische, schweizerische und internationale Sender ist eine 7-Tage Catch-Up- und Replay-Funktion verfügbar.' },
-  { id: 'sport-5', category: 'sports', q: 'Kann ich unnötige ausländische Senderlisten ausblenden?', a: 'Absolut. Sie können Ländergruppen in Ihrem IPTV Player wie IPTV Extreme oder IBO Player Pro einfach ausblenden. Unser Support Team kann Ihr Konto auf Anfrage auch anpassen, damit Sie nur Sender erhalten, die Sie wirklich schauen.' },
-  { id: 'sport-6', category: 'sports', q: 'Wie stabil ist die Bildqualität bei beliebten Sportevents?', a: 'Unsere Server nutzen dynamisches Load Balancing über dedizierte Frankfurter Rechenzentren. Selbst in Spitzenmomenten wie Bundesliga-Spieltagen, Champions League Finals oder großen UFC Titelkämpfen bleibt die Bitrate stabil ohne Frame-Drops.' },
+  { id: 'sport-1', category: 'sports', q: 'Sind Sport und Events enthalten?', a: 'Ja. Jedes Senderpaket enthält das komplette Sportprogramm in flüssiger 60FPS Qualität.' },
+  { id: 'sport-2', category: 'sports', q: 'Zahle ich extra für PPV Events?', a: 'Nein, alle weltweiten Pay-per-View Events sind standardmäßig ohne zusätzliche Kosten enthalten.' },
+  { id: 'sport-3', category: 'sports', q: 'Haben ausländische Filme und Serien deutsche Untertitel?', a: 'Über 95% unseres kompletten VOD-Katalogs enthält wählbare deutsche Untertitel und optionale Original-Tonspuren.' },
+  { id: 'sport-4', category: 'sports', q: 'Funktionieren EPG TV-Guide und Catch-Up-Funktion richtig?', a: 'Ja. Unser interaktiver EPG TV-Guide wird automatisch synchronisiert.' },
+  { id: 'sport-5', category: 'sports', q: 'Kann ich unnötige Senderlisten ausblenden?', a: 'Absolut. Sie können Ländergruppen in Ihrem Player einfach ausblenden.' },
+  { id: 'sport-6', category: 'sports', q: 'Wie stabil ist die Bildqualität bei beliebten Events?', a: 'Unsere Server nutzen dynamisches Load Balancing. Selbst in Spitzenmomenten bleibt die Bitrate stabil ohne Frame-Drops.' },
 
-  // GERÄTE
-  { id: 'dev-1', category: 'devices', q: 'Auf welchen TVs und Geräten kann ich IPTV installieren?', a: 'Unser Service ist universell kompatibel mit Smart TVs (Samsung Tizen, LG webOS, Sony Android TV, Philips), Amazon Fire TV Stick, Google Chromecast mit Google TV, Apple TV 4K, Nvidia Shield, MAG Boxen, Windows PC, Mac, iPhone, iPad und Android-Smartphones.' },
-  { id: 'dev-2', category: 'devices', q: 'Welche IPTV Apps liefern das beste Seherlebnis?', a: 'Für Android TV und Fire TV Stick empfehlen wir IPTV Extreme für das schnellste Sender-Zappen. Für Samsung und LG Smart TVs funktionieren IPTV Extreme oder IBO Player Pro am besten. Für Apple TV Nutzer sind IPTVX oder GSE Smart IPTV die Top-Wahl.' },
-  { id: 'dev-3', category: 'devices', q: 'Welche Mindest-Internetgeschwindigkeit brauche ich für 4K und 60FPS?', a: 'Für Full HD Sender empfehlen wir mindestens 15 bis 20 Mbit/s. Für 4K Ultra HD und 60FPS Sport-Streams 25 bis 30 Mbit/s. Ein Ethernet-Kabel oder 5GHz WLAN bietet immer die stabilste Erfahrung.' },
-  { id: 'dev-4', category: 'devices', q: 'Was soll ich tun, wenn ein Sender puffert oder einfriert?', a: 'Puffern wird in 99% der Fälle durch vorübergehende WLAN-Störungen oder einen vollen App-Cache verursacht. Starten Sie Ihren Router und Modem neu, starten Sie Ihre IPTV App neu oder wechseln Sie die Stream-Engine zwischen HLS und TS in den Player-Einstellungen.' },
-  { id: 'dev-5', category: 'devices', q: 'Brauche ich technische Kenntnisse für die Installation?', a: 'Nein. Die Installation dauert durchschnittlich weniger als 5 Minuten und unser Team begleitet Sie per WhatsApp. Sie laden eine Player-App aus dem Gerätespeicher herunter, geben die Login-Daten ein, die wir Ihnen senden, und die Sender laden automatisch.' },
-  { id: 'dev-6', category: 'devices', q: 'Kann ich mein Konto auf Reisen außerhalb Deutschlands nutzen?', a: 'Ja. Unsere Streams sind weltweit ohne geografische Einschränkungen zugänglich. Sie können Ihr IPTV Deutschland Konto sorglos in Ihrem Ferienhaus in Italien, Spanien oder überall sonst nutzen.' },
+  { id: 'dev-1', category: 'devices', q: 'Auf welchen TVs und Geräten kann ich installieren?', a: 'Unser Service ist kompatibel mit Smart TVs, Amazon Fire TV Stick, Chromecast, Apple TV 4K, Nvidia Shield, MAG Boxen, Windows PC, Mac, iPhone, iPad und Android-Smartphones.' },
+  { id: 'dev-2', category: 'devices', q: 'Welche Apps liefern das beste Seherlebnis?', a: 'Wir empfehlen unsere Top-Player für das schnellste Zappen und die beste Leistung.' },
+  { id: 'dev-3', category: 'devices', q: 'Welche Mindest-Internetgeschwindigkeit brauche ich?', a: 'Für Full HD Sender empfehlen wir mindestens 15 bis 20 Mbit/s. Für 4K Ultra HD und 60FPS 25 bis 30 Mbit/s.' },
+  { id: 'dev-4', category: 'devices', q: 'Was soll ich tun, wenn ein Sender puffert oder einfriert?', a: 'Puffern wird in 99% der Fälle durch vorübergehende WLAN-Störungen oder einen vollen App-Cache verursacht. Starten Sie Ihren Router neu oder starten Sie Ihre App neu.' },
+  { id: 'dev-5', category: 'devices', q: 'Brauche ich technische Kenntnisse für die Installation?', a: 'Nein. Die Installation dauert durchschnittlich weniger als 5 Minuten und unser Team begleitet Sie per WhatsApp.' },
+  { id: 'dev-6', category: 'devices', q: 'Kann ich mein Konto auf Reisen nutzen?', a: 'Ja. Unsere Streams sind weltweit ohne geografische Einschränkungen zugänglich.' },
 
-  // ABRECHNUNG
-  { id: 'pay-1', category: 'billing', q: 'Welche sicheren Zahlungsoptionen unterstützen Sie?', a: 'Sie können sicher per SEPA-Überweisung, Kreditkarte (Visa und Mastercard), PayPal und Kryptowährungen (Bitcoin, USDT, Ethereum) über eine stark gesicherte 256-Bit SSL-Verbindung bezahlen. Alle Preise sind in Euro (inkl. MwSt.).' },
-  { id: 'pay-2', category: 'billing', q: 'Ist ein VPN erforderlich?', a: 'Nein. Ein VPN ist nicht erforderlich, da alle unsere Streams über sichere, verschlüsselte Verbindungen laufen. Wenn Sie zusätzliche Privatsphäre bevorzugen, sind unsere Streaming-Server 100% kompatibel mit allen großen VPN-Anbietern.' },
-  { id: 'pay-3', category: 'billing', q: 'Wie werden meine persönlichen Daten geschützt?', a: 'Wir respektieren die DSGVO und internationale Datenschutzstandards. Wir speichern niemals Sehverlauf oder Sender-Logs, verkaufen niemals Daten an Dritte und speichern niemals Kreditkarten- oder Bankkontonummern auf unseren lokalen Servern.' },
-  { id: 'pay-4', category: 'billing', q: 'Was passiert, wenn ich meine Zugangsdaten verliere?', a: 'Kein Problem. Senden Sie eine Nachricht mit Ihrer Bestellnummer oder Registrierungs-E-Mail an unser WhatsApp Kundenservice-Team und unser Helpdesk sendet Ihre Zugangsdaten innerhalb von 5 Minuten erneut.' },
-  { id: 'pay-5', category: 'billing', q: 'Erhalte ich nach der Zahlung eine Rechnung oder Quittung?', a: 'Ja. Unmittelbar nach Abschluss der Transaktion erhalten Sie eine automatische digitale Bestellbestätigung und Rechnung in Ihrem Posteingang.' },
-  { id: 'pay-6', category: 'billing', q: 'Gibt es versteckte Gebühren oder Verwaltungskosten?', a: 'Nein. Die Preise auf unserer Preisseite sind vollständig all inclusive. Sie zahlen einmalig für Ihren gewählten Zeitraum ohne unerwartete Zusatzkosten oder Verbindungsgebühren.' },
+  { id: 'pay-1', category: 'billing', q: 'Welche sicheren Zahlungsoptionen unterstützen Sie?', a: 'Sie können sicher per SEPA-Überweisung, Kreditkarte, PayPal und Kryptowährungen bezahlen. Alle Preise sind in Euro.' },
+  { id: 'pay-2', category: 'billing', q: 'Ist ein VPN erforderlich?', a: 'Nein. Ein VPN ist nicht erforderlich, da alle unsere Streams über sichere, verschlüsselte Verbindungen laufen.' },
+  { id: 'pay-3', category: 'billing', q: 'Wie werden meine persönlichen Daten geschützt?', a: 'Wir respektieren den Datenschutz. Wir speichern niemals Sehverlauf und verkaufen niemals Daten an Dritte.' },
+  { id: 'pay-4', category: 'billing', q: 'Was passiert, wenn ich meine Zugangsdaten verliere?', a: 'Kein Problem. Senden Sie eine Nachricht an unser WhatsApp Kundenservice-Team und wir senden Ihre Zugangsdaten innerhalb von 5 Minuten erneut.' },
+  { id: 'pay-5', category: 'billing', q: 'Erhalte ich nach der Zahlung eine Rechnung oder Quittung?', a: 'Ja. Unmittelbar nach Abschluss erhalten Sie eine automatische digitale Bestellbestätigung.' },
+  { id: 'pay-6', category: 'billing', q: 'Gibt es versteckte Gebühren oder Verwaltungskosten?', a: 'Nein. Die Preise sind all inclusive ohne unerwartete Zusatzkosten.' },
 ];
 
-// ---------------------------------------------------------------------------
-// MAIN PAGE
-// ---------------------------------------------------------------------------
 export default function FAQPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<'all' | 'general' | 'sports' | 'devices' | 'billing'>('all');
@@ -223,7 +210,7 @@ export default function FAQPage() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF]/70 font-bold max-w-2xl mx-auto leading-relaxed mb-8">
-            Finden Sie sofortige Antworten zu <span className="text-[#FFCE00]">IPTV Deutschland</span> Abonnements, 4K IPTV Streaming, Smart TV Setup und sicheren EUR Zahlungen.
+            Finden Sie sofortige Antworten zu <span className="text-[#FFCE00]">Abos</span>, 4K Streaming, Smart TV Setup und sicheren EUR Zahlungen.
           </p>
 
           <div className="w-full flex items-center justify-center mb-8">
@@ -254,7 +241,7 @@ export default function FAQPage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Frage suchen (Bundesliga, IPTV Extreme, SEPA, Puffern)..."
+                placeholder="Frage suchen (App, SEPA, Puffern)..."
                 className="w-full pl-12 pr-4 py-4 rounded-full bg-[#f2ebeb] text-[#0a0a0c] placeholder-[#0a0a0c]/50 font-bold border-2 border-transparent focus:border-[#DD0000] focus:outline-none shadow-2xl transition-all"
               />
             </div>
@@ -389,7 +376,7 @@ export default function FAQPage() {
               Beste <span className="text-[#FFCE00]">Geräte & Apps</span>
             </h2>
             <p className="text-sm sm:text-base text-[#FFFFFF]/70 font-bold max-w-xl mx-auto">
-              Die besten IPTV Player und Mindest-Internetgeschwindigkeiten für ein pufferfreies Seherlebnis in Deutschland, Österreich und der Schweiz.
+              Die besten Apps und Mindest-Internetgeschwindigkeiten für ein pufferfreies Seherlebnis.
             </p>
           </div>
 
@@ -398,21 +385,21 @@ export default function FAQPage() {
               {
                 icon: Smartphone,
                 title: 'Android & Firestick',
-                desc: 'Höchste Stabilität und schnellstes Sender-Zappen.',
-                apps: ['IPTV Extreme (Empfohlen)', 'TiviMate IPTV Player Pro', 'IBO Player Pro'],
+                desc: 'Höchste Stabilität und schnellstes Zappen.',
+                apps: ['Empfohlene Apps', 'TiviMate Player Pro', 'IBO Player Pro'],
                 speed: 'Mind. Geschwindigkeit: 20 Mbit/s',
               },
               {
                 icon: Tv,
                 title: 'Samsung & LG Smart TV',
                 desc: 'Direkt streamen ohne externe Box.',
-                apps: ['IPTV Extreme (webOS / Tizen)', 'Smart IPTV (SIPTV)', 'IBO Player Pro'],
+                apps: ['Apps (webOS / Tizen)', 'Smart IPTV (SIPTV)', 'IBO Player Pro'],
                 speed: 'Mind. Geschwindigkeit: 25 Mbit/s',
               },
               {
                 icon: Cpu,
                 title: 'Apple TV & iOS',
-                desc: 'Scharfes 4K Interface für Apple Geräte.',
+                desc: 'Scharfes Interface für Apple Geräte.',
                 apps: ['IPTVX (tvOS)', 'GSE Smart IPTV', 'IPTV Smarters Player Lite'],
                 speed: 'Mind. Geschwindigkeit: 25 Mbit/s',
               },
@@ -463,8 +450,8 @@ export default function FAQPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { n: 1, title: 'Router Neu Starten', desc: 'Schalten Sie Modem und TV für 30 Sekunden aus, um DNS-Cache und Netzwerküberlastung zu leeren.' },
-              { n: 2, title: 'Playlist Aktualisieren', desc: 'Wählen Sie in Ihrer IPTV App "Playlist aktualisieren" oder "Portal neu laden", um neue Sender und EPG zu laden.' },
-              { n: 3, title: 'Stream-Format Wechseln', desc: 'Wechseln Sie in den Player-Einstellungen den Stream-Typ von TS zu HLS für flüssigere Datenübertragung.' },
+              { n: 2, title: 'Playlist Aktualisieren', desc: 'Wählen Sie in Ihrer App "Playlist aktualisieren" oder "Portal neu laden", um neue Inhalte zu laden.' },
+              { n: 3, title: 'Stream-Format Wechseln', desc: 'Wechseln Sie in den App-Einstellungen den Stream-Typ von TS zu HLS für flüssigere Datenübertragung.' },
             ].map((step) => (
               <div key={step.n} className="p-5 bg-white rounded-2xl border border-[#0a0a0c]/10 shadow-sm">
                 <span className="w-8 h-8 rounded-full bg-[#DD0000] text-[#FFFFFF] font-black text-sm flex items-center justify-center mb-3">
@@ -497,12 +484,12 @@ export default function FAQPage() {
             </h2>
 
             <p className="text-[#FFFFFF]/90 font-bold text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-              Unser Team ist 24/7 auf WhatsApp verfügbar für Installationshilfe, Senderfragen und kostenlose 24-Stunden Test-Lines.
+              Unser Team ist 24/7 auf WhatsApp verfügbar für Installationshilfe, Fragen und kostenlose Test-Lines.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
               <a
-                href={`${whatsappBaseUrl}?text=${encodeURIComponent(`Hallo ${BRAND}, ich habe eine Frage zum IPTV Deutschland Service.`)}`}
+                href={`${whatsappBaseUrl}?text=${encodeURIComponent(`Hallo ${BRAND}, ich habe eine Frage zum Service.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0a0a0c] text-[#FFFFFF] font-black text-xs uppercase tracking-widest hover:bg-[#FFFFFF] hover:text-[#DD0000] transition-all hover:scale-105 shadow-xl border-2 border-[#FFCE00]"
@@ -513,7 +500,7 @@ export default function FAQPage() {
                 href="/preise"
                 className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#FFCE00] text-[#8C0000] font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl"
               >
-                Alle IPTV Pakete
+                Alle Pakete
               </Link>
             </div>
           </div>

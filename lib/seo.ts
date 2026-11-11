@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 // ---------------------------------------------------------------------------
 // CORE BRAND & DOMAIN CONFIGURATION (DACH — GERMANY / AUSTRIA / SWITZERLAND)
 // ---------------------------------------------------------------------------
-const DOMAIN = 'iptvdeutsch.org';
+const DOMAIN = 'iptvdeutsch.org/de';
 const BRAND_NAME = 'IPTV Deutsch';
 const SITE_URL = `https://${DOMAIN}`;
 const FOCUS_KEYWORD = 'iptv kaufen';

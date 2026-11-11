@@ -129,7 +129,7 @@ export default function SmartOneIPTVPage() {
           <div className="inline-flex items-center gap-2 bg-[#DD0000]/20 border border-[#DD0000]/40 px-5 py-2 rounded-full mb-6 backdrop-blur-md">
             <Medal className="w-4 h-4 text-[#FFCE00]" />
             <span className="text-[#FAFAFA] font-extrabold text-xs uppercase tracking-widest flex items-center gap-2">
-              Vertrauenswürdiger SmartOne IPTV Anbieter
+              Zuverlässiger SmartOne IPTV Anbieter
               <GermanFlag className="w-7 h-7 rounded-[2px] shrink-0" />
             </span>
           </div>
@@ -140,7 +140,7 @@ export default function SmartOneIPTVPage() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-[#FAFAFA]/80 max-w-3xl mx-auto mb-10 font-medium leading-relaxed px-2">
-            Willkommen bei SmartOne IPTV in Deutschland. Erhalten Sie 36.000 Live TVs und über 120.000 Filme und Serien in gestochen scharfem 4K IPTV. Unser SmartOne IPTV Service umfasst geführtes Setup per WhatsApp, einen kostenlosen 24-Stunden-Test auf Ihrem eigenen Fernseher und Preise in Euro ohne Vertragslaufzeit.
+            Herzlich willkommen bei SmartOne IPTV in Deutschland. Nutzen Sie 36.000 Live TVs sowie über 120.000 Filme und Serien in brillantem 4K IPTV. Zu unserem SmartOne IPTV Service gehören ein begleitetes Setup per WhatsApp, ein kostenloser 24-Stunden-Test auf Ihrem eigenen Fernseher und Preise in Euro ganz ohne Vertragsbindung.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full max-w-md sm:max-w-xl mx-auto px-4">
@@ -205,7 +205,7 @@ export default function SmartOneIPTVPage() {
 
         <div className="w-full max-w-3xl px-4 text-center mt-10">
           <p className="text-base md:text-lg leading-relaxed text-slate-300 font-medium">
-            Es gibt nichts Schöneres, als sein Lieblingsteam oder einen neuen Film auf dem großen Bildschirm zu verfolgen. Die SmartOne IPTV Server in Frankfurt halten das Bild gestochen scharf und den Ton synchron, damit Sie sich auf dem Sofa entspannen können – ohne Puffer oder Qualitätsverlust.
+            Es gibt kaum etwas Schöneres, als sein Lieblingsteam oder einen neuen Film auf dem großen Bildschirm zu genießen. Die SmartOne IPTV Server in Frankfurt halten das Bild gestochen scharf und den Ton perfekt synchron, damit Sie auf dem Sofa entspannen können – ohne Puffer und ohne Qualitätsverlust.
           </p>
           <div className="w-full flex justify-center mt-8">
             <Link
@@ -234,7 +234,7 @@ export default function SmartOneIPTVPage() {
               ALLES WAS SIE ÜBER <span className="text-[#DD0000]">SMARTONE IPTV</span> WISSEN MÜSSEN
             </h2>
             <p className="text-[#0A0A0C]/75 font-semibold text-base md:text-lg leading-relaxed">
-              SmartOne IPTV ist ein Streaming-Service, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung liefert. Hier ist, was Sie mit SmartOne IPTV in Deutschland, Österreich und der Schweiz erhalten.
+              SmartOne IPTV ist ein Streaming-Dienst, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung bereitstellt. Das erwartet Sie mit SmartOne IPTV in Deutschland, Österreich und der Schweiz.
             </p>
           </FadeIn>
 
@@ -315,7 +315,7 @@ export default function SmartOneIPTVPage() {
               SMARTONE IPTV SENDER &amp; FILMBIBLIOTHEK
             </h2>
             <p className="text-slate-300 font-medium text-lg">
-              Entdecken Sie Tausende Live-TV-Sender plus 120.000+ Filme und Serien in der SmartOne IPTV On-Demand-Bibliothek. Täglich kommen neue Titel hinzu.
+              Erkunden Sie Tausende Live-TV-Sender sowie 120.000+ Filme und Serien in der SmartOne IPTV On-Demand-Bibliothek. Täglich kommen neue Titel hinzu.
             </p>
           </div>
         </FadeIn>
@@ -351,7 +351,7 @@ export default function SmartOneIPTVPage() {
               HÄUFIGE FRAGEN ZU <span className="text-[#FFCE00]">SMARTONE IPTV</span>
             </h2>
             <p className="text-slate-300 font-medium text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              Die häufigsten Fragen, die unser Team zu SmartOne IPTV in Deutschland erhält.
+              Die Fragen, die unser Team zu SmartOne IPTV in Deutschland am häufigsten erreichen.
             </p>
           </FadeIn>
 
@@ -359,7 +359,7 @@ export default function SmartOneIPTVPage() {
             {[
               {
                 q: 'Was ist SmartOne IPTV?',
-                a: 'SmartOne IPTV ist ein Premium-Streaming-Service, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung liefert. In Deutschland bietet unser SmartOne IPTV Service 36.000+ Live TVs und 120.000+ Filme und Serien in 4K IPTV Ultra HD – mit geführtem WhatsApp Setup und Preisen in Euro.',
+                a: 'SmartOne IPTV ist ein Premium-Streaming-Dienst, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung liefert. In Deutschland bietet unser SmartOne IPTV Service 36.000+ Live TVs und 120.000+ Filme und Serien in 4K IPTV Ultra HD – mit geführtem WhatsApp Setup und Preisen in Euro.',
               },
               {
                 q: 'Wie viel kostet SmartOne IPTV in Deutschland?',
@@ -408,15 +408,15 @@ export default function SmartOneIPTVPage() {
             </h3>
 
             <p className="text-[#0A0A0C]/85 text-base md:text-lg leading-relaxed font-medium">
-              Traditionelles deutsches Bezahlfernsehen ist jedes Jahr teurer geworden, während weniger Sender zu höheren Preisen angeboten werden. Haushalte in Berlin, Hamburg, München, Wien und Zürich wechseln zu SmartOne IPTV, weil es dieselben Inhalte zu einem Bruchteil der monatlichen Kosten liefert – ohne Vertragslaufzeit und ohne zusätzliche Receiver oder Hardware.
+              Klassisches deutsches Bezahlfernsehen wurde Jahr für Jahr teurer, während die Senderauswahl kleiner und der Preis höher wurde. Haushalte in Berlin, Hamburg, München, Wien und Zürich entscheiden sich für SmartOne IPTV, weil es dieselben Inhalte zu einem Bruchteil der monatlichen Kosten bietet – ohne Vertragsbindung und ohne zusätzliche Receiver oder Hardware.
             </p>
 
             <p className="text-[#0A0A0C]/85 text-base md:text-lg leading-relaxed font-medium">
-              SmartOne IPTV läuft auf einer modernen Streaming-Infrastruktur, die für deutschsprachige Bedingungen gebaut wurde. Unsere Server stehen in Frankfurt Edge-Rechenzentren mit dedizierter Bandbreite, sodass Senderwechsel sofort geschehen und Streams auch in den verkehrsreichsten Momenten wie Bundesliga-Spieltagen, Champions League Finals und Formel 1 Rennen flüssig bleiben.
+              SmartOne IPTV läuft auf einer modernen Streaming-Infrastruktur, die speziell für den deutschsprachigen Raum gebaut wurde. Unsere Server befinden sich in Frankfurt Edge-Rechenzentren mit dedizierter Bandbreite, sodass Senderwechsel sofort erfolgen und Streams selbst in den verkehrsreichsten Momenten – etwa an Bundesliga-Spieltagen, bei Champions-League-Finals oder Formel-1-Rennen – flüssig bleiben.
             </p>
 
             <p className="text-[#0A0A0C]/85 text-base md:text-lg leading-relaxed font-medium">
-              Das Setup ist eines der Dinge, die Kunden in Bewertungen am häufigsten erwähnen. Sie müssen kein Technikprofi sein. Sie wählen ein Paket, schreiben unserem Team per WhatsApp und wir begleiten Sie durch die Installation einer App wie IPTV Extreme oder IBO Player Pro auf Ihrem Firestick, Smart TV oder Smartphone. Sobald Sie einsatzbereit sind, erhalten Sie einen kostenlosen 24-Stunden-Test, um die Bildqualität zu prüfen, das Sportangebot zu checken und sicherzustellen, dass alles perfekt auf Ihrer Internetverbindung funktioniert, bevor Sie upgraden.
+              Das Setup gehört zu den Punkten, die Kunden in Bewertungen am häufigsten loben. Sie müssen kein Technikprofi sein. Sie wählen ein Paket, schreiben unserem Team per WhatsApp und wir begleiten Sie bei der Installation einer App wie IPTV Extreme oder IBO Player Pro auf Ihrem Firestick, Smart TV oder Smartphone. Sobald Sie startklar sind, erhalten Sie einen kostenlosen 24-Stunden-Test, um die Bildqualität zu prüfen, das Sportangebot zu testen und sicherzustellen, dass auf Ihrer Internetverbindung alles einwandfrei funktioniert, bevor Sie upgraden.
             </p>
 
             <p className="text-[#0A0A0C]/85 text-base md:text-lg leading-relaxed font-medium">

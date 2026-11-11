@@ -100,7 +100,7 @@ export default function TermsPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-[#FFFFFF]/80 font-bold max-w-2xl mx-auto leading-relaxed">
-            Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie die Dienste und Streaming-Abonnements von {BRAND} nutzen.
+            Bitte lesen Sie diese Bedingungen aufmerksam durch, bevor Sie die Streaming-Angebote und Abonnements von {BRAND} beanspruchen.
           </p>
 
           <p className="text-xs text-[#FFFFFF]/40 mt-4 font-bold uppercase tracking-wider">
@@ -128,9 +128,9 @@ export default function TermsPage() {
             <div>
               <p className="text-[#0a0a0c] font-bold text-sm md:text-base leading-relaxed">
                 <span className="text-[#DD0000] font-black uppercase tracking-wide block mb-1">
-                  Annahme der Bedingungen:
+                  Geltung der Bestimmungen:
                 </span>
-                Durch den Kauf eines Abonnements oder die Nutzung der Website und Dienste von {BRAND} bestätigen Sie, an diese Allgemeinen Geschäftsbedingungen sowie an unsere Datenschutzerklärung gebunden zu sein.
+                Durch den Erwerb eines Abonnements oder die Nutzung der Webpräsenz und Dienste von {BRAND} erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen sowie unserer Datenschutzerklärung einverstanden.[cite: 5]
               </p>
             </div>
           </div>
@@ -142,28 +142,28 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              1. Beschreibung der Dienstleistung
+              1. Leistungsbeschreibung
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed">
-              {BRAND} bietet digitale IPTV Streaming-Dienste an, die Abonnenten Zugang zu Live-TV-Sendern, Video-on-Demand (VOD) Filmen und Serien über das Internet ermöglichen. Unser Service ist ausschließlich für den persönlichen, nicht-kommerziellen Haushaltsgebrauch bestimmt.
+              {BRAND} stellt digitale IPTV-Streaming-Lösungen bereit, die es registrierten Nutzern gestatten, Live-Sender sowie Video-on-Demand (VOD) Filme und Serien über das Internet zu konsumieren. Das Angebot richtet sich ausschließlich an private Haushalte für den nicht-kommerziellen Eigenbedarf.[cite: 5]
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              2. Teilnahmeberechtigung & Verantwortlichkeiten
+              2. Teilnahmevoraussetzungen & Pflichten
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Durch die Nutzung unserer Dienste versichern und garantieren Sie, dass:
+              Mit Inanspruchnahme unserer Services bestätigen und garantieren Sie folgende Punkte:[cite: 5]
             </p>
             <ul className="space-y-3 mb-6">
               {[
-                'Sie mindestens 18 Jahre alt und rechtlich in der Lage sind, eine verbindliche Vereinbarung einzugehen.',
-                'Sie bei der Erstellung Ihres Kontos korrekte und aktuelle Informationen angeben.',
-                'Sie Ihre persönlichen Zugangsdaten und Playlist-Links streng vertraulich behandeln und nicht weiterverkaufen.',
-                'Sie unseren Service nicht für kommerzielles Rebroadcasting oder öffentliche Vorführungen nutzen.',
-                'Sie über eine geeignete Internetverbindung verfügen (mindestens 25 Mbit/s für flüssiges 4K IPTV Streaming).',
+                'Sie sind mindestens 18 Jahre alt und rechtlich geschäftsfähig.',
+                'Sie hinterlegen bei der Registrierung wahrheitsgemäße und aktuelle Angaben.',
+                'Sie halten Ihre persönlichen Zugangsdaten und Playlist-URLs geheim und geben diese nicht weiter.',
+                'Sie sehen von jeglicher kommerziellen Weiterverbreitung oder öffentlichen Ausstrahlung ab.',
+                'Sie verfügen über eine stabile Internetverbindung (empfohlen ab 25 Mbit/s für flüssiges 4K-Streaming).',
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -185,9 +185,9 @@ export default function TermsPage() {
                 <div>
                   <p className="text-[#0a0a0c] text-sm font-bold leading-relaxed">
                     <span className="text-[#DD0000] font-black uppercase tracking-wide block mb-0.5">
-                      Kontosicherheit:
+                      Verantwortung für das Konto:
                     </span>
-                    Sie sind jederzeit für alle Aktivitäten verantwortlich, die unter Ihrem Konto und Ihren Zugangsdaten stattfinden.
+                    Sie tragen die volle Verantwortung für sämtliche Aktivitäten, die über Ihr Benutzerkonto und Ihre Zugangsdaten ausgeführt werden.[cite: 5]
                   </p>
                 </div>
               </div>
@@ -197,17 +197,17 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              3. Abonnements, Preise & Zahlung
+              3. Abonnements, Tarife & Bezahlung
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Unsere aktuellen Abonnement-Optionen und Preise finden Sie auf der Preise-Seite. Beim Kauf stimmen Sie Folgendem zu:
+              Unsere aktuellen Tarifmodelle und Kostenübersichten entnehmen Sie der Preisseite. Mit dem Bestellvorgang akzeptieren Sie folgende Bestimmungen:[cite: 5]
             </p>
             <ul className="space-y-3 mb-6">
               {[
-                'Zahlungen erfolgen im Voraus über sichere Zahlungsmethoden (SEPA-Überweisung, Kreditkarte, PayPal und Krypto).',
-                'Abonnements werden nicht automatisch verlängert. Sie entscheiden, wann Sie verlängern.',
-                'Ihr Konto wird nach erfolgreicher Zahlungsbestätigung und unserem WhatsApp-geführten Setup aktiviert.',
-                'Alle Preise sind in Euro (€, inkl. MwSt.) und enthalten alle anfallenden Steuern, sofern nicht ausdrücklich anders angegeben.',
+                'Die Abrechnung erfolgt im Voraus über gängige Zahlungsmethoden (Kreditkarte, SEPA, PayPal oder Krypto).',
+                'Es findet keine 자동e Verlängerung statt; Sie bestimmen den Zeitpunkt einer Verlängerung selbst.',
+                'Die Freischaltung Ihres Profils erfolgt nach Zahlungseingang im Zuge unseres WhatsApp-basierten Setups.',
+                'Sämtliche Beträge verstehen sich in Euro (€ inkl. gesetzlicher MwSt.), sofern keine abweichenden Angaben gemacht werden.',
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -229,9 +229,9 @@ export default function TermsPage() {
                 <div>
                   <p className="text-[#0a0a0c] text-sm font-bold leading-relaxed">
                     <span className="text-green-600 font-black uppercase tracking-wide block mb-0.5">
-                      Sichere Zahlung:
+                      Gesicherter Zahlungsverkehr:
                     </span>
-                    Alle Transaktionen werden über PCI DSS-zertifizierte Zahlungs-Gateways mit 256-Bit SSL-Verschlüsselung verarbeitet.
+                    Sämtliche Zahlungsabwicklungen laufen über PCI-DSS-zertifizierte Schnittstellen mit starker 256-Bit SSL-Verschlüsselung ab.[cite: 5]
                   </p>
                 </div>
               </div>
@@ -241,18 +241,18 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              4. Nutzungsrichtlinie (Fair Use)
+              4. Fair-Use-Richtlinie (Nutzungsbedingungen)
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Es ist streng verboten, den Service für Folgendes zu nutzen:
+              Es ist untersagt, unsere Infrastruktur für folgende Handlungen zu missbrauchen:[cite: 5]
             </p>
             <ul className="space-y-3 mb-6">
               {[
-                'Weiterverkauf, Restreaming oder Klonen Ihrer zugewiesenen Streaming-Lines.',
-                'Streaming auf mehr Geräten gleichzeitig, als Ihr gewähltes Paket erlaubt.',
-                'Versuche des Reverse Engineering, Scraping von Servern oder Überlastung des Netzwerks (DDoS).',
-                'Herunterladen, dauerhaftes Aufzeichnen oder Weiterverbreiten digitaler Übertragungen.',
-                'Jede Nutzung, die gegen geltendes deutsches, österreichisches, schweizerisches oder internationales Recht verstößt.',
+                'Weiterverkauf, privates Restreaming oder Vervielfältigung der zugeteilten Zugänge.',
+                'Paralleles Streamen auf mehr Endgeräten, als Ihr gebuchtes Tarifpaket vorsieht.',
+                'Reverse Engineering, automatisiertes Auslesen (Scraping) oder Überlastungsangriffe (DDoS) gegen unsere Server.',
+                'Das dauerhafte Herunterladen, Aufzeichnen oder Weiterleiten geschützter Streams.',
+                'Jegliche Verwendung im Widerspruch zur geltenden deutschen, österreichischen, schweizerischen oder internationalen Rechtsordnung.',
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -274,9 +274,9 @@ export default function TermsPage() {
                 <div>
                   <p className="text-[#0a0a0c] text-sm font-bold leading-relaxed">
                     <span className="text-[#DD0000] font-black uppercase tracking-wide block mb-0.5">
-                      Konsequenzen bei Verstößen:
+                      Sanktionen bei Zuwiderhandlung:
                     </span>
-                    Bei Verstoß gegen diese Nutzungsrichtlinie behalten wir uns das Recht vor, das Konto sofort und ohne Rückerstattung zu sperren.
+                    Bei Zuwiderhandlungen gegen diese Richtlinien behalten wir uns das Recht vor, das Konto unverzüglich und ohne Anspruch auf Kostenerstattung zu sperren.[cite: 5]
                   </p>
                 </div>
               </div>
@@ -286,33 +286,33 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              5. Qualitätsgarantie & Rückerstattungen
+              5. Leistungsversprechen & Rückerstattungen
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Wir bieten eine vollständige 7-Tage-Qualitätsgarantie. Sollte der Service nicht wie versprochen funktionieren oder sollten technische Probleme auftreten, die unser Team nicht lösen kann, können Sie innerhalb von 7 Tagen nach dem Kauf eine vollständige Rückerstattung über unseren Support beantragen.
+              Wir gewähren eine umfassende 7-Tage-Garantie auf unsere Servicequalität. Sollten unerwartete technische Hürden auftreten, die unser Support-Team nicht beheben kann, steht Ihnen innerhalb von 7 Tagen ab Kaufdatum ein Rückgaberecht offen.[cite: 5]
             </p>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Diese Garantie gilt nur für echte Service-Probleme. Sie deckt keine Meinungsänderungen, persönliche Vorlieben, lokale Internetprobleme oder Geräteinkompatibilität auf Ihrer Seite ab. Vollständige Details finden Sie in unserer{' '}
+              Diese Kulanz greift ausschließlich bei nachweisbaren technischen Störungen und deckt weder persönliche Präferenzen noch schwache Heimnetzwerke oder inkompatible Hardware ab. Ausführliche Richtlinien finden Sie in unserer{' '}
               <Link href="/rueckgabe" className="text-[#FFCE00] font-black hover:underline">
-                Rückgabe & Garantie Policy
+                Rückgabe- & Garantievereinbarung
               </Link>
-              .
+              .[cite: 5]
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              6. Verfügbarkeit & Senderänderungen
+              6. Systemverfügbarkeit & Programmänderungen
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Wir streben eine konstante 99,9% Uptime an. Vorübergehende Wartungen oder externe Senderänderungen können jedoch vorkommen. {BRAND} behält sich das Recht vor:
+              Unser Ziel ist eine durchgehende Erreichbarkeit von 99,9%. Dennoch können notwendige Wartungsarbeiten oder Anpassungen durch externe Quellen anfallen. {BRAND} behält sich folgende Maßnahmen vor:[cite: 5]
             </p>
             <ul className="space-y-3 mb-6">
               {[
-                'Senderlisten und VOD-Kataloge für bessere Bildqualität zu aktualisieren oder zu optimieren.',
-                'Kurze geplante Server-Wartungen außerhalb der Stoßzeiten durchzuführen.',
-                'Preise für zukünftige Abonnement-Perioden anzupassen.',
+                'Aktualisierung und Strukturierung der Sender- und VOD-Verzeichnisse zur Performance-Steigerung.',
+                'Ausführung kurzer Wartungsfenster außerhalb der Hauptverkehrszeiten.',
+                'Preisanpassungen für zukünftige Abrechnungszeiträume.',
               ].map((item, idx) => (
                 <li
                   key={idx}
@@ -328,17 +328,17 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              7. Geistiges Eigentum & Haftung
+              7. Urheberrecht & Haftungsbeschränkung
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed">
-              Alle Marken, Logos, Texte und Software-Codes auf dieser Website sind geistiges Eigentum von {BRAND}. Soweit gesetzlich zulässig, haftet {BRAND} nicht für indirekte Schäden, Datenverluste oder Ausfälle, die durch Drittanbieter-Internetanbieter oder Nutzergeräte verursacht werden.
+              Sämtliche Logos, Marken, Texte und Web-Inhalte sind urheberrechtlich geschütztes Eigentum von {BRAND}. Im gesetzlich zulässigen Rahmen übernimmt {BRAND} keine Haftung für mittelbare Schäden, Datenverluste oder Verbindungsausfälle, die auf Seiten von Internetprovidern oder Endgeräten entstehen.[cite: 5]
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              8. Anwendbares Recht & Gerichtsstand
+              8. Rechtswahl & Gerichtsstand
             </h2>
             <div className="bg-[#f2ebeb] border-4 border-[#DD0000] rounded-3xl p-6 my-6 shadow-xl">
               <div className="flex gap-4 items-start">
@@ -350,9 +350,9 @@ export default function TermsPage() {
                 <div>
                   <p className="text-[#0a0a0c] text-sm font-bold leading-relaxed">
                     <span className="text-[#DD0000] font-black uppercase tracking-wide block mb-0.5">
-                      Anwendbares Recht:
+                      Anwendbare Gesetze:
                     </span>
-                    Diese Allgemeinen Geschäftsbedingungen unterliegen dem Recht der Bundesrepublik Deutschland und werden nach diesem ausgelegt. Für Verbraucher gilt zusätzlich das zwingende Verbraucherschutzrecht ihres gewöhnlichen Aufenthaltsorts (Deutschland, Österreich oder Schweiz). Gerichtsstand für Streitigkeiten mit Kaufleuten ist Frankfurt am Main.
+                    Für diese Geschäftsbedingungen gilt das Recht der Bundesrepublik Deutschland. Verbraucherschutzvorschriften im Wohnsitzland des Kunden (Deutschland, Österreich, Schweiz) bleiben unberührt. Gerichtsstand bei Streitigkeiten mit Unternehmen ist Frankfurt am Main.[cite: 5]
                   </p>
                 </div>
               </div>
@@ -362,25 +362,25 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              9. Änderungen dieser Bedingungen
+              9. Anpassung der Konditionen
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed">
-              Wir behalten uns das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Wesentliche Änderungen werden auf unserer Startseite oder per WhatsApp an aktive Abonnenten bekannt gegeben. Die weitere Nutzung unserer Dienste nach einer Aktualisierung gilt als Annahme der überarbeiteten Bedingungen.
+              Wir behalten uns vor, diese AGB zu aktualisieren. Relevante Änderungen werden auf der Plattform oder über direkte WhatsApp-Nachrichten an aktive Abonnenten kommuniziert. Die fortgesetzte Nutzung der Dienste nach einer Modifikation gilt als Zustimmung zu den neuen Bedingungen.[cite: 5]
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-black text-[#FFFFFF] uppercase tracking-tight mb-4 flex items-center gap-3">
               <span className="w-2 h-7 bg-[#DD0000] rounded-full inline-block" />
-              10. Kontakt & Kundensupport
+              10. Support & Ansprechpartner
             </h2>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed mb-4">
-              Bei Fragen zu diesen Allgemeinen Geschäftsbedingungen oder für Support zu Ihrem Abonnement kontaktieren Sie unsere Rechts- und Support-Abteilung:
+              Bei rechtlichen Fragen zu diesen AGB oder bei Anliegen rund um Ihr aktives Konto erreichen Sie unser Team über folgende Wege:[cite: 5]
             </p>
             <div className="bg-[#f2ebeb] border-4 border-[#DD0000] rounded-3xl p-6 my-6 text-center shadow-xl">
               <Mail className="w-8 h-8 text-[#DD0000] mx-auto mb-2" />
               <p className="text-xs uppercase font-black text-[#0a0a0c]/60 tracking-widest mb-1">
-                Rechts- & Kundensupport
+                Rechts- & Support-Abteilung
               </p>
               <a
                 href={`mailto:legal@${CONSTANTS.DOMAIN}`}
@@ -390,11 +390,11 @@ export default function TermsPage() {
               </a>
             </div>
             <p className="text-[#FFFFFF]/80 text-base font-medium leading-relaxed">
-              Für allgemeinen Kundensupport nutzen Sie bitte unser 24/7{' '}
+              Für technische Hilfe steht Ihnen rund um die Uhr unser{' '}
               <Link href="/support" className="text-[#FFCE00] font-black hover:underline">
                 WhatsApp Support Team
-              </Link>
-              .
+              </Link>{' '}
+              zur Seite.[cite: 5]
             </p>
           </section>
         </div>

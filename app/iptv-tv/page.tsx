@@ -143,7 +143,7 @@ export default function IPTVTVPage() {
               </h1>
 
               <p className="text-base sm:text-lg text-[#FAFAFA]/70 max-w-lg mb-8 font-medium leading-relaxed">
-                36.000 Live TVs, 120.000 Filme und Serien, 4K IPTV Qualität – alles auf jedem Gerät.
+                Alles auf jedem Gerät: 36.000 Live TVs, 120.000 Filme und Serien sowie 4K IPTV Qualität.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-10">
@@ -417,7 +417,7 @@ export default function IPTVTVPage() {
               IPTV TV <span className="text-[#FFCE00]">FILME &amp; SERIEN</span>
             </h2>
             <p className="text-slate-300 font-medium text-base md:text-lg">
-              120.000+ Titel auf Abruf – von Blockbustern bis Serien-Boxsets.
+              Über 120.000 Titel auf Abruf – von Blockbustern bis zu Serien-Boxsets.
             </p>
           </div>
         </FadeIn>
@@ -482,7 +482,7 @@ export default function IPTVTVPage() {
 
               <div className="space-y-4">
                 {[
-                  { icon: Zap, text: 'Sofortiges Zappen, kein Warten auf Senderwechsel' },
+                  { icon: Zap, text: 'Sofortiges Zappen, kein Warten beim Senderwechsel' },
                   { icon: ShieldCheck, text: '99,9% Uptime über Frankfurt Server' },
                   { icon: CheckCircle2, text: 'Keine Vertragslaufzeit, monatlich kündbar' },
                   { icon: MessageCircle, text: '24/7 WhatsApp Support auf Deutsch' },

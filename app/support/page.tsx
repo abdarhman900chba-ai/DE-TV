@@ -97,7 +97,7 @@ const SuccessPopup = ({ onClose }: { onClose: () => void }) => {
         </h3>
 
         <p className="text-[#DD0000] font-bold text-sm leading-relaxed mb-6">
-          Vielen Dank für Ihre Kontaktaufnahme mit {BRAND}. Unser Support Team wird sich so schnell wie möglich melden.
+          Wir danken Ihnen für Ihre Kontaktaufnahme mit {BRAND}. Unser Support Team meldet sich so rasch wie möglich bei Ihnen.
         </p>
 
         <div className="bg-[#0a0a0c] rounded-2xl border border-white/5 p-5 mb-6 text-left">
@@ -170,7 +170,7 @@ export default function SupportPage() {
 
       setShowSuccessPopup(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setToast({ message: 'Ihre Nachricht wurde erfolgreich gesendet!', type: 'success' });
+      setToast({ message: 'Ihre Nachricht wurde erfolgreich versandt!', type: 'success' });
     } catch {
       setToast({ message: 'Senden fehlgeschlagen. Bitte erneut über WhatsApp versuchen.', type: 'error' });
     } finally {
@@ -278,7 +278,7 @@ export default function SupportPage() {
             </h1>
 
             <p className="text-lg md:text-xl text-[#FFFFFF]/80 font-bold max-w-2xl mx-auto leading-relaxed">
-              Fragen zu unseren IPTV Deutschland Sendern, Smart TV Setup oder Zahlungen? Unser Support Team ist 24/7 per WhatsApp, E-Mail und Live-Chat erreichbar.
+              Sie haben Fragen zu unseren IPTV Deutschland Sendern, zum Smart TV Setup oder zu Zahlungen? Unser Support Team erreichen Sie rund um die Uhr per WhatsApp, E-Mail und Live-Chat.
             </p>
           </FadeIn>
         </div>
@@ -295,7 +295,7 @@ export default function SupportPage() {
                   Senden Sie Uns eine Nachricht
                 </h2>
                 <p className="text-[#DD0000] font-bold text-sm mb-6">
-                  Füllen Sie das untenstehende Formular aus und wir antworten per WhatsApp oder E-Mail – meist innerhalb von Minuten.
+                  Füllen Sie das untenstehende Formular aus – wir melden uns per WhatsApp oder E-Mail, meist innerhalb weniger Minuten.
                 </p>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
@@ -624,19 +624,19 @@ export default function SupportPage() {
           {[
             {
               q: 'Wie kontaktiere ich den Support am schnellsten?',
-              a: `Für den schnellsten Support senden Sie uns eine Nachricht direkt per WhatsApp. Unser Team antwortet normalerweise innerhalb weniger Minuten.`,
+              a: `Für den schnellsten Support schreiben Sie uns direkt per WhatsApp. Unser Team antwortet in der Regel innerhalb weniger Minuten.`,
             },
             {
               q: 'Bieten Sie Hilfe bei der Installation an?',
-              a: 'Ja. Unser Team begleitet Sie Schritt für Schritt durch die Einrichtung von IPTV Deutschland auf Smart TV, Firestick, Android und Apple TV – entweder manuell oder mit Remote-Aktivierung per WhatsApp.',
+              a: 'Ja. Unser Team begleitet Sie Schritt für Schritt bei der Einrichtung von IPTV Deutschland auf Smart TV, Firestick, Android und Apple TV – entweder manuell oder mit Remote-Aktivierung per WhatsApp.',
             },
             {
               q: 'Kann ich zuerst einen kostenlosen Test anfordern?',
-              a: 'Absolut. Fordern Sie einen kostenlosen 24-Stunden IPTV Test per WhatsApp an, um unsere 4K IPTV Sender risikofrei vor dem Abonnement zu testen.',
+              a: 'Selbstverständlich. Fordern Sie einen kostenlosen 24-Stunden IPTV Test per WhatsApp an, um unsere 4K IPTV Sender risikofrei vor dem Abonnement zu prüfen.',
             },
             {
               q: 'Wie schnell werde ich eingerichtet?',
-              a: 'Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, richtet unser Team Sie live per WhatsApp ein. Die meisten Kunden streamen innerhalb von 10 Minuten.',
+              a: 'Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, richtet unser Team Sie live per WhatsApp ein. Die meisten Kunden streamen bereits nach 10 Minuten.',
             },
           ].map((faq, idx) => (
             <FadeInItem

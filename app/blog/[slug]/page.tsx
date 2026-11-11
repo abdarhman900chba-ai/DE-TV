@@ -43,7 +43,7 @@ function getCategoryLabel(post: any): string {
     return map[post.category] || post.category;
   }
   if (post.keywords && post.keywords.length > 0) return post.keywords[0];
-  return 'IPTV Deutschland Ratgeber';
+  return 'Ratgeber';
 }
 
 function getReadTime(post: any): number {
@@ -165,7 +165,7 @@ export async function generateMetadata({ params }: Props) {
     post.metadescription ||
       post.description ||
       post.excerpt ||
-      `Lesen Sie den vollständigen ${BRAND} Ratgeber und Tipps für IPTV Streaming in Deutschland.`
+      `Lesen Sie den vollständigen ${BRAND} Ratgeber und Tipps.`
   );
 
   const canonicalUrl = `${SITE_URL}/blog/${post.slug}`;
@@ -248,10 +248,10 @@ export default async function BlogPostPage({ params }: Props) {
   const wordCount = post.content.replace(/<[^>]*>/g, '').split(/\s+/).filter(Boolean).length;
 
   const whatsappIboMsg = encodeURIComponent(
-    `Hallo! Ich möchte IPTV Extreme oder IBO Player Pro Zugang bestellen.`
+    `Hallo! Ich möchte Zugang bestellen.`
   );
   const whatsappSubMsg = encodeURIComponent(
-    `Hallo! Ich möchte ein IPTV Deutschland Abonnement abschließen.`
+    `Hallo! Ich möchte ein Abonnement abschließen.`
   );
 
   const authorId = `${SITE_URL}/#author-${post.author
@@ -264,26 +264,19 @@ export default async function BlogPostPage({ params }: Props) {
   const jsonLdGraph: any = {
     '@context': 'https://schema.org',
     '@graph': [
-      // AUTHOR (Person)
       {
         '@type': 'Person',
         '@id': authorId,
         name: post.author,
         url: `${SITE_URL}/ueber-uns`,
-        jobTitle: 'IPTV Deutschland Spezialist',
-        description: `Spezialisiert auf IPTV Streaming-Ratgeber und Setup für deutschsprachige Zuschauer.`,
+        jobTitle: 'Spezialist',
+        description: `Spezialisiert auf Streaming-Ratgeber und Setup.`,
         knowsAbout: [
-          'IPTV Deutschland',
-          'IPTV Extreme',
-          'IBO Player Pro',
-          'Firestick Einrichtung',
-          'Smart TV Streaming',
-          '4K IPTV Streaming',
+          'Setup',
+          'Streaming',
         ],
         worksFor: { '@id': orgId },
       },
-
-      // ARTICLE (BlogPosting)
       {
         '@type': 'BlogPosting',
         '@id': `${canonicalUrl}/#article`,
@@ -329,8 +322,6 @@ export default async function BlogPostPage({ params }: Props) {
         copyrightHolder: { '@id': orgId },
         license: `${SITE_URL}/agb`,
       },
-
-      // WEBPAGE
       {
         '@type': 'WebPage',
         '@id': `${canonicalUrl}/#webpage`,
@@ -349,8 +340,6 @@ export default async function BlogPostPage({ params }: Props) {
           target: [canonicalUrl],
         },
       },
-
-      // BREADCRUMB
       {
         '@type': 'BreadcrumbList',
         '@id': `${canonicalUrl}/#breadcrumb`,
@@ -386,7 +375,7 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <article className="flex flex-col min-h-screen bg-[#0a0a0c] text-[#FFFFFF]">
+    <article className="flex flex-col min-h-screen bg-[#0a0a0c] text-white">
       <script
         type="application/ld+json"
         id="article-schema-data"
@@ -394,7 +383,6 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
       />
 
-      {/* HERO */}
       <section className="relative min-h-[70vh] md:min-h-[75vh] flex items-center justify-center overflow-hidden bg-[#0a0a0c]">
         <div className="absolute inset-0 z-0">
           <Image
@@ -404,7 +392,7 @@ export default async function BlogPostPage({ params }: Props) {
             height={1080}
             priority
             fetchPriority="high"
-            className="w-full h-full object-cover scale-105 brightness-[0.22]"
+            className="w-full h-full object-cover scale-105 brightness-[0.22] rounded-none"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-[#0a0a0c]/10 to-[#0a0a0c]/10" />
@@ -417,85 +405,83 @@ export default async function BlogPostPage({ params }: Props) {
             backgroundSize: '60px 60px',
           }}
         />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#DD0000]/12 blur-[150px] rounded-full pointer-events-none z-0" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#DD0000]/12 blur-[150px] rounded-none pointer-events-none z-0" />
 
         <div className="max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 text-center relative z-10 pt-32 sm:pt-36 md:pt-40 pb-16 flex flex-col items-center justify-center">
-          <div className="inline-flex items-center gap-2 bg-[#DD0000] px-5 py-2.5 rounded-full mb-8 shadow-lg shadow-[#DD0000]/30 border border-[#FFCE00]/30">
-            <BookOpen className="w-4 h-4 text-[#FFCE00]" />
-            <span className="text-[#FFFFFF] text-xs font-black uppercase tracking-widest inline-flex items-center gap-2">
+          <div className="inline-flex items-center gap-2 bg-[#DD0000] px-5 py-2.5 rounded-none mb-8 shadow-lg shadow-[#DD0000]/30 border border-[#FFD700]/30">
+            <BookOpen className="w-4 h-4 text-[#FFD700]" />
+            <span className="text-white text-xs font-black uppercase tracking-widest inline-flex items-center gap-2">
               {displayCategory}
               <GermanFlag className="w-4 h-4" />
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-[#FFFFFF] tracking-tighter uppercase mb-6 leading-[1.05] max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white tracking-tighter uppercase mb-6 leading-[1.05] max-w-4xl">
             {post.title}
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-[#FFFFFF]/75 font-bold max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-bold max-w-3xl mx-auto leading-relaxed mb-10">
             {post.description || post.excerpt}
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-3">
-            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-full text-[#FFFFFF] text-xs font-black uppercase tracking-widest">
-              <Calendar className="w-3.5 h-3.5 text-[#FFCE00]" />
+            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-none text-white text-xs font-black uppercase tracking-widest">
+              <Calendar className="w-3.5 h-3.5 text-[#FFD700]" />
               <span>{dateStr}</span>
             </div>
-            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-full text-[#FFFFFF] text-xs font-black uppercase tracking-widest">
-              <User className="w-3.5 h-3.5 text-[#FFCE00]" />
+            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-none text-white text-xs font-black uppercase tracking-widest">
+              <User className="w-3.5 h-3.5 text-[#FFD700]" />
               <span>{post.author}</span>
             </div>
-            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-full text-[#FFFFFF] text-xs font-black uppercase tracking-widest">
-              <Clock className="w-3.5 h-3.5 text-[#FFCE00]" />
+            <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 backdrop-blur-md px-4 py-2 rounded-none text-white text-xs font-black uppercase tracking-widest">
+              <Clock className="w-3.5 h-3.5 text-[#FFD700]" />
               <span>{readTime} Min. Lesezeit</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* BREADCRUMB */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 mt-10">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-[#FFCE00] hover:text-[#FFFFFF] transition-colors font-black text-xs uppercase tracking-widest group"
+          className="inline-flex items-center gap-2 text-[#FFD700] hover:text-white transition-colors font-black text-xs uppercase tracking-widest group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Zurück zu allen Artikeln
         </Link>
       </div>
 
-      {/* MAIN GRID */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         <div className="lg:col-span-8 order-1 lg:order-1 space-y-10">
-          <div className="relative w-full aspect-video rounded-3xl overflow-hidden border-4 border-[#DD0000] shadow-[0_25px_60px_rgba(221,0,0,0.25)]">
+          <div className="relative w-full aspect-video rounded-none overflow-hidden border-4 border-[#DD0000] shadow-[0_25px_60px_rgba(221,0,0,0.25)] bg-[#121214]">
             <Image
               src={post.image}
               alt={post.title}
               fill
               priority
-              className="object-cover"
+              className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 800px"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
 
-          <div className="relative bg-[#f2ebeb] text-[#0a0a0c] rounded-3xl border-4 border-[#DD0000] shadow-[0_25px_60px_rgba(10,10,12,0.15)] p-6 sm:p-8 md:p-12">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#DD0000]/8 to-transparent rounded-bl-[4rem] pointer-events-none" />
+          <div className="relative bg-[#121214] text-white rounded-none border-4 border-[#DD0000] shadow-[0_25px_60px_rgba(10,10,12,0.15)] p-6 sm:p-8 md:p-12">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#DD0000]/8 to-transparent pointer-events-none" />
 
             <div
               className="
                 article-body
-                prose prose-lg max-w-none relative
-                [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-black [&_h2]:text-[#0a0a0c] [&_h2]:mb-5 [&_h2]:mt-12 [&_h2]:tracking-tight [&_h2]:uppercase [&_h2]:leading-tight
+                prose prose-lg max-w-none relative text-white
+                [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-black [&_h2]:text-white [&_h2]:mb-5 [&_h2]:mt-12 [&_h2]:tracking-tight [&_h2]:uppercase [&_h2]:leading-tight
                 [&_h2]:pb-3 [&_h2]:border-b-4 [&_h2]:border-[#DD0000]/20
                 [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-black [&_h3]:text-[#DD0000] [&_h3]:mb-4 [&_h3]:mt-8 [&_h3]:uppercase
                 [&_h4]:text-lg [&_h4]:md:text-xl [&_h4]:font-black [&_h4]:text-[#DD0000] [&_h4]:mb-3 [&_h4]:mt-6 [&_h4]:uppercase
-                [&_p]:text-[#0a0a0c]/85 [&_p]:text-base [&_p]:md:text-lg [&_p]:font-medium [&_p]:leading-[1.8] [&_p]:mb-5 [&_p]:md:mb-6
+                [&_p]:text-slate-300 [&_p]:text-base [&_p]:md:text-lg [&_p]:font-medium [&_p]:leading-[1.8] [&_p]:mb-5 [&_p]:md:mb-6
                 [&_a]:text-[#DD0000] [&_a]:font-black [&_a]:hover:text-[#8C0000] [&_a]:transition-colors [&_a]:underline [&_a]:decoration-2 [&_a]:underline-offset-2
-                [&_blockquote]:border-l-4 [&_blockquote]:border-[#DD0000] [&_blockquote]:bg-[#DD0000]/5 [&_blockquote]:pl-6 [&_blockquote]:py-3 [&_blockquote]:my-6 [&_blockquote]:text-[#0a0a0c]/70 [&_blockquote]:italic [&_blockquote]:rounded-r-xl
-                [&_code]:bg-[#0a0a0c]/10 [&_code]:px-2 [&_code]:py-1 [&_code]:rounded-lg [&_code]:text-[#DD0000] [&_code]:text-sm [&_code]:font-bold
-                [&_pre]:bg-[#0a0a0c] [&_pre]:text-[#FFFFFF] [&_pre]:p-6 [&_pre]:rounded-2xl [&_pre]:overflow-x-auto
-                [&_img]:rounded-2xl [&_img]:my-8 [&_img]:border-4 [&_img]:border-[#DD0000] [&_img]:w-full [&_img]:h-auto [&_img]:shadow-2xl
+                [&_blockquote]:border-l-4 [&_blockquote]:border-[#DD0000] [&_blockquote]:bg-[#DD0000]/5 [&_blockquote]:pl-6 [&_blockquote]:py-3 [&_blockquote]:my-6 [&_blockquote]:text-slate-300 [&_blockquote]:italic
+                [&_code]:bg-white/10 [&_code]:px-2 [&_code]:py-1 [&_code]:rounded-none [&_code]:text-[#DD0000] [&_code]:text-sm [&_code]:font-bold
+                [&_pre]:bg-[#0a0a0c] [&_pre]:text-white [&_pre]:p-6 [&_pre]:rounded-none [&_pre]:overflow-x-auto
+                [&_img]:rounded-none [&_img]:my-8 [&_img]:border-4 [&_img]:border-[#DD0000] [&_img]:w-full [&_img]:h-auto [&_img]:shadow-2xl
                 [&_hr]:border-[#DD0000]/20 [&_hr]:my-12
               "
               dangerouslySetInnerHTML={{ __html: safeContent }}
@@ -507,8 +493,8 @@ export default async function BlogPostPage({ params }: Props) {
           {post.keywords && post.keywords.length > 0 && (
             <div className="pt-2">
               <div className="flex items-center gap-2 mb-5">
-                <Tag className="w-5 h-5 text-[#FFCE00]" />
-                <h2 className="text-[#FFFFFF] font-black text-base md:text-lg uppercase tracking-wide">
+                <Tag className="w-5 h-5 text-[#FFD700]" />
+                <h2 className="text-white font-black text-base md:text-lg uppercase tracking-wide">
                   Themen in diesem Artikel
                 </h2>
               </div>
@@ -516,7 +502,7 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.keywords.slice(0, 8).map((keyword: string) => (
                   <span
                     key={keyword}
-                    className="px-4 py-2 bg-[#f2ebeb] text-[#0a0a0c] text-xs md:text-sm font-black uppercase tracking-wider rounded-full border-2 border-[#DD0000] shadow-md hover:bg-[#DD0000] hover:text-[#FFFFFF] hover:scale-105 transition-all cursor-default"
+                    className="px-4 py-2 bg-[#121214] text-white text-xs md:text-sm font-black uppercase tracking-wider rounded-none border-2 border-[#DD0000] shadow-md hover:bg-[#DD0000] hover:text-white hover:scale-105 transition-all cursor-default"
                   >
                     {keyword}
                   </span>
@@ -525,30 +511,30 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
 
-          <div className="relative overflow-hidden rounded-3xl border-4 border-[#DD0000] bg-gradient-to-br from-[#f2ebeb] to-[#faf2f2] shadow-2xl p-6 md:p-8">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-[#DD0000]/10 rounded-bl-[3rem] pointer-events-none" />
+          <div className="relative overflow-hidden rounded-none border-4 border-[#DD0000] bg-[#121214] shadow-2xl p-6 md:p-8 text-white">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-[#DD0000]/10 pointer-events-none" />
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 md:gap-6 text-center sm:text-left relative z-10">
-              <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-[#DD0000] shadow-xl flex-shrink-0">
+              <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-none overflow-hidden border-4 border-[#DD0000] shadow-xl flex-shrink-0 bg-[#0a0a0c]">
                 <Image
                   src="/img/profile.webp"
-                  alt={`${post.author} - IPTV Deutschland Spezialist`}
+                  alt={`${post.author} - Spezialist`}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-none"
                   sizes="96px"
                 />
               </div>
               <div className="flex-1">
-                <div className="inline-flex items-center gap-2 bg-[#DD0000] text-[#FFFFFF] px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-3 border border-[#FFCE00]/40">
-                  <User className="w-3 h-3 text-[#FFCE00]" /> Autor
+                <div className="inline-flex items-center gap-2 bg-[#DD0000] text-white px-3 py-1 rounded-none text-[10px] font-black uppercase tracking-widest mb-3 border border-[#FFD700]/40">
+                  <User className="w-3 h-3 text-[#FFD700]" /> Autor
                 </div>
-                <h2 className="text-[#0a0a0c] font-black text-2xl md:text-3xl mb-1 uppercase tracking-tight">
+                <h2 className="text-white font-black text-2xl md:text-3xl mb-1 uppercase tracking-tight">
                   {post.author}
                 </h2>
                 <p className="text-[#DD0000] text-xs md:text-sm uppercase tracking-widest font-black mb-3">
-                  IPTV Deutschland Spezialist
+                  Spezialist
                 </p>
-                <p className="text-[#0a0a0c]/85 text-sm md:text-base font-semibold leading-relaxed">
-                  Spezialisiert auf Streaming-Protokolle, App-Konfigurationen und Optimierungen für deutsche, österreichische und schweizer Netzwerke. Hilft Kunden, das Beste aus ihrem 4K IPTV Deutschland Abonnement und IPTV Extreme Setup herauszuholen.
+                <p className="text-slate-300 text-sm md:text-base font-semibold leading-relaxed">
+                  Spezialisiert auf Streaming-Protokolle, App-Konfigurationen und Optimierungen. Hilft Kunden, das Beste aus ihrem Abonnement herauszuholen.
                 </p>
               </div>
             </div>
@@ -564,19 +550,19 @@ export default async function BlogPostPage({ params }: Props) {
 
       <div className="border-t border-white/5 mt-12 py-8 bg-[#0a0a0c]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-[#FFFFFF]/60 text-xs font-black uppercase tracking-widest">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-white/60 text-xs font-black uppercase tracking-widest">
             <span className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-[#FFCE00]" /> 4K IPTV Ultra HD
+              <Zap className="w-4 h-4 text-[#FFD700]" /> 4K Ultra HD
             </span>
             <span className="flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-[#FFCE00]" /> 99,9% Server Uptime
+              <ShieldCheck className="w-4 h-4 text-[#FFD700]" /> 99,9% Uptime
             </span>
             <span className="flex items-center gap-2">
-              <Headphones className="w-4 h-4 text-[#FFCE00]" /> 24/7 WhatsApp Support
+              <Headphones className="w-4 h-4 text-[#FFD700]" /> 24/7 Support
             </span>
           </div>
-          <p className="text-center text-[#FFFFFF]/40 text-xs mt-6 font-bold inline-flex items-center justify-center gap-2 w-full">
-            © 2026 {BRAND}. Alle Rechte vorbehalten. Hergestellt in Deutschland
+          <p className="text-center text-white/40 text-xs mt-6 font-bold inline-flex items-center justify-center gap-2 w-full">
+            © 2026 {BRAND}. Alle Rechte vorbehalten.
             <GermanFlag className="w-3.5 h-3.5" />
           </p>
         </div>

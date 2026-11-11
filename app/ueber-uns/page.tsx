@@ -28,7 +28,7 @@ const PAGE_URL = `${SITE_URL}/ueber-uns`;
 // ---------------------------------------------------------------------------
 export const metadata = generateSEOMetadata(
   'Über Uns',
-  `Entdecken Sie die Geschichte hinter ${BRAND}, dem vertrauenswürdigen IPTV Anbieter für Deutschland mit 36.000+ Live TVs in 4K IPTV und 99,9% Uptime.`,
+  `Erfahren Sie die Geschichte hinter ${BRAND}, dem verlässlichen IPTV Anbieter für Deutschland mit 36.000+ Live TVs in 4K IPTV und 99,9% Uptime.`,
   '/ueber-uns'
 );
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
           <div className="inline-flex items-center gap-2 bg-[#DD0000] px-4 py-2 rounded-full mb-6 shadow-md border border-[#FFCE00]/30">
             <Sparkles className="w-4 h-4 text-[#FFCE00]" />
             <span className="text-[#FFFFFF] font-black text-xs uppercase tracking-widest inline-flex items-center gap-2">
-              Unsere Geschichte & Mission
+              Unsere Geschichte und Mission
               <GermanFlag className="w-4 h-4" />
             </span>
           </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-[#FFFFFF]/80 font-bold max-w-2xl mx-auto leading-relaxed">
-            Der Premium IPTV Anbieter für Deutschland. Erleben Sie unbegrenztes Streaming in 4K IPTV Qualität – ohne Puffer, ohne Vertragslaufzeit, ohne versteckte Gebühren.
+            Der Premium IPTV Anbieter für Deutschland. Tauchen Sie ein in grenzenloses Streaming in 4K IPTV Qualität – ohne Puffer, ohne Vertragsbindung und ohne versteckte Kosten.
           </p>
         </div>
       </section>
@@ -141,13 +141,13 @@ export default function AboutPage() {
       <section className="w-full bg-gradient-to-r from-[#DD0000] via-[#8C0000] to-[#DD0000] py-10 px-4 sm:px-6 border-y-4 border-[#FFCE00]/20 shadow-[0_0_50px_rgba(221,0,0,0.4)] relative z-20 overflow-hidden">
         <div className="max-w-3xl mx-auto flex flex-col items-center justify-center text-center relative z-10 gap-5">
           <div className="bg-[#FFCE00] text-[#8C0000] font-black text-xs px-5 py-2 rounded-full uppercase tracking-widest shadow-md">
-            SPAREN SIE BEI KABEL-TV
+            SPAREN SIE GEGENÜBER KABEL-TV
           </div>
           <h2 className="text-[#FFFFFF] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none drop-shadow-md max-w-2xl">
-            BEREIT FÜR DAS BESTE IPTV ERLEBNIS?
+            BEREIT FÜR IHR BESTES IPTV ERLEBNIS?
           </h2>
           <p className="text-[#FFFFFF]/90 text-sm sm:text-base md:text-lg font-bold max-w-xl leading-relaxed">
-            Hören Sie auf, für separate Abonnements zu viel zu bezahlen. Holen Sie sich all Ihren Sport, Filme und deutsche Sender in einem kompletten Paket.
+            Schluss mit überteuerten Einzelabonnements. Bündeln Sie Sport, Filme und deutsche Sender in einem einzigen Komplettpaket.
           </p>
           <div className="w-full sm:w-auto mt-2">
             <Link
@@ -177,7 +177,7 @@ export default function AboutPage() {
                 Willkommen bei {BRAND}
               </h2>
               <p className="text-[#0a0a0c]/90 font-bold text-base leading-relaxed">
-                Wir wurden mit einem klaren Ziel gegründet: Premium Live-TV und On-Demand-Medien für jeden Haushalt in Deutschland, Österreich und der Schweiz zugänglich und bezahlbar zu machen – ohne Kompromisse bei Bildqualität oder Stabilität.
+                Unsere Gründung folgte einem klaren Auftrag: Premium Live-TV und On-Demand-Inhalte für jeden Haushalt in Deutschland, Österreich und der Schweiz zugänglich und bezahlbar zu machen – ganz ohne Abstriche bei Bildqualität oder Stabilität.
               </p>
             </div>
           </div>
@@ -193,10 +193,10 @@ export default function AboutPage() {
               Unsere Mission & Vision
             </h2>
             <p className="text-[#FFFFFF]/80 text-base leading-relaxed font-medium mb-4">
-              Traditionelle Kabel-Abonnements werden jedes Jahr teurer, während die Senderauswahl begrenzt bleibt. Haushalte in DACH sind gezwungen, mehrere Dienste zu bündeln, nur um Bundesliga, Champions League, Formel 1 und Filme zu bekommen – oft zahlen sie 60 € oder mehr pro Monat für einen Bruchteil der Inhalte.
+              Klassische Kabel-Abos werden Jahr für Jahr teurer, während die Senderauswahl begrenzt bleibt. Haushalte im DACH-Raum müssen mehrere Dienste kombinieren, nur um Bundesliga, Champions League, Formel 1 und Filme zu bekommen – und zahlen dafür oft 60 € oder mehr pro Monat für einen Bruchteil der Inhalte.
             </p>
             <p className="text-[#FFFFFF]/80 text-base leading-relaxed font-medium">
-              Bei {BRAND} bündeln wir alles in einer intuitiven Plattform. Live-Sport, deutsche öffentlich-rechtliche Sender und die neuesten Kinoveröffentlichungen in 4K IPTV Ultra HD. Wir investieren kontinuierlich in fortschrittliche Serverkapazität, um Puffern der Vergangenheit angehören zu lassen – selbst am Champions-League-Finaltag.
+              Bei {BRAND} führen wir alles in einer intuitiven Plattform zusammen. Live-Sport, deutsche öffentlich-rechtliche Sender und die neuesten Kinoproduktionen in 4K IPTV Ultra HD. Wir investieren laufend in moderne Serverkapazität, damit Puffern der Vergangenheit angehört – selbst am Champions-League-Finaltag.
             </p>
           </section>
 
@@ -257,7 +257,7 @@ export default function AboutPage() {
               Unsere Technische Server-Infrastruktur
             </h2>
             <p className="text-[#FFFFFF]/80 text-base leading-relaxed font-medium mb-6">
-              Wir betreiben unsere eigenen Streaming-Server mit dedizierten 10 Gbit/s Glasfaser-Verbindungen. Unsere Server leiten das Videosignal automatisch über den nächstgelegenen Knotenpunkt, sodass Sie immer flüssige 50 und 60 FPS Streaming-Qualität genießen – ob Sie in Berlin, Hamburg, München, Wien oder Zürich sind.
+              Wir betreiben eigene Streaming-Server mit dedizierten 10 Gbit/s Glasfaser-Anbindungen. Unsere Systeme leiten das Videosignal automatisch über den nächstgelegenen Knotenpunkt, damit Sie durchgehend flüssiges Streaming mit 50 und 60 FPS genießen – ganz gleich, ob Sie in Berlin, Hamburg, München, Wien oder Zürich sitzen.
             </p>
             <div className="bg-[#0a0a0c] border border-white/10 rounded-3xl p-6 shadow-xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
@@ -293,8 +293,8 @@ export default function AboutPage() {
               Die Kompletteste Senderliste
             </h2>
             <p className="text-[#FFFFFF]/80 text-base leading-relaxed font-medium mb-6">
-              Mit über <strong className="text-[#FFFFFF]">36.000 Live TVs</strong> und einer Videobibliothek von{' '}
-              <strong className="text-[#FFFFFF]">120.000+ Filmen und Serien</strong> bieten wir eines der umfangreichsten Senderpakete in Deutschland, Österreich und der Schweiz:
+              Mit mehr als <strong className="text-[#FFFFFF]">36.000 Live TVs</strong> und einer Videobibliothek von{' '}
+              <strong className="text-[#FFFFFF]">120.000+ Filmen und Serien</strong> zählen wir zu den umfangreichsten Senderpaketen in Deutschland, Österreich und der Schweiz:
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -328,7 +328,7 @@ export default function AboutPage() {
                     Kostenloser 24-Stunden IPTV Test
                   </h3>
                   <p className="text-[#0a0a0c] text-sm md:text-base font-bold leading-relaxed">
-                    Schreiben Sie uns per WhatsApp und wir richten Ihnen einen kostenlosen 24-Stunden IPTV Test ein. Prüfen Sie die 4K IPTV Bildqualität, das Senderangebot und ob alles reibungslos auf Ihrem eigenen Gerät und Ihrer Internetverbindung läuft. Erst dann IPTV kaufen. Ohne Vertragslaufzeit, ohne Druck.
+                    Schreiben Sie uns einfach auf WhatsApp – wir richten Ihnen unkompliziert einen kostenlosen 24-Stunden IPTV Test ein. Prüfen Sie die 4K IPTV Bildqualität, das komplette Senderangebot und ob auf Ihrem eigenen Gerät und Ihrer Internetleitung alles reibungslos läuft. Erst danach entscheiden Sie sich, IPTV zu kaufen. Ohne Vertragsbindung, ohne Druck.
                   </p>
                 </div>
               </div>
@@ -343,7 +343,7 @@ export default function AboutPage() {
               Erleben Sie Es Selbst, Risikofrei
             </h2>
             <p className="text-[#DD0000] font-bold text-base max-w-lg mx-auto mb-8">
-              Schließen Sie sich Tausenden zufriedenen Haushalten in Deutschland, Österreich und der Schweiz an. Geführtes Setup per WhatsApp und die meisten Kunden streamen innerhalb von 10 Minuten.
+              Schließen Sie sich Tausenden zufriedenen Haushalten in Deutschland, Österreich und der Schweiz an. Wir begleiten Ihr Setup per WhatsApp – die meisten Kunden streamen bereits nach 10 Minuten.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md mx-auto px-4">
               <Link

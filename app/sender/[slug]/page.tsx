@@ -527,7 +527,7 @@ export default async function ChannelCategoryPage({ params }: Props) {
               Verfügbare <span className="text-[#FFCE00]">{category.name}</span>
             </h2>
             <p className="text-[#FFFFFF]/70 font-bold text-sm sm:text-base mt-2">
-              Beliebte Sender zuerst angezeigt. Jeder Sender streamt in FHD oder 4K mit niedriger Latenz und 7-Tage Catch-Up.
+              Zuerst sehen Sie die beliebtesten Sender. Alle laufen in FHD oder 4K mit niedriger Latenz und 7-Tage-Catch-Up.
             </p>
           </div>
           <div className="text-xs uppercase font-black tracking-widest text-[#FFFFFF]/60 bg-white/5 px-4 py-2 rounded-xl border border-white/10 w-fit">

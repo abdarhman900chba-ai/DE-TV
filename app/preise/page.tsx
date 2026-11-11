@@ -187,7 +187,7 @@ export default function PricingPage() {
 
             <FadeInItem>
               <p className="text-lg md:text-xl text-[#f2ebeb]/80 font-bold max-w-2xl mx-auto leading-relaxed px-2 text-center mb-6">
-                IPTV kaufen bei einem vertrauenswürdigen IPTV Anbieter: 36.000 Live TVs, 120.000 Filme und Serien in 4K auf jedem Gerät. Erst kostenlos IPTV testen, dann IPTV kaufen per WhatsApp Einrichtung und Euro Preisen ohne Vertragslaufzeit.
+                Bei einem seriösen IPTV Anbieter IPTV kaufen: 36.000 Live TVs sowie 120.000 Filme und Serien in 4K auf jedem Gerät. Zuerst kostenlos IPTV testen, danach IPTV kaufen – mit WhatsApp Einrichtung und Euro Preisen ganz ohne Vertragsbindung.
               </p>
             </FadeInItem>
 
@@ -396,7 +396,7 @@ export default function PricingPage() {
               WARUM <span className="text-[#FFCE00]">{CONSTANTS.BRAND_NAME}</span> WÄHLEN
             </h2>
             <p className="text-white/85 text-lg font-bold max-w-2xl mx-auto mt-4">
-              IPTV Deutschland, Austria, Schweiz – vertraut von über 15.000 zufriedenen Zuschauern.
+              IPTV Deutschland, Austria und Schweiz – das Vertrauen von über 15.000 zufriedenen Zuschauern.
             </p>
           </FadeIn>
 
@@ -468,7 +468,7 @@ export default function PricingPage() {
             Kostenloser 24-Stunden IPTV Test
           </h3>
           <p className="text-[#0a0a0c]/80 max-w-2xl mx-auto text-sm md:text-base font-bold leading-relaxed">
-            Schreiben Sie uns per WhatsApp und wir richten Ihnen einen kostenlosen 24-Stunden IPTV Test ein. Prüfen Sie die 4K IPTV Bildqualität, das Senderangebot und ob alles reibungslos auf Ihrem Gerät und Ihrer Internetverbindung läuft. Erst dann IPTV kaufen.
+            Schreiben Sie uns per WhatsApp – wir richten Ihnen einen kostenlosen 24-Stunden IPTV Test ein. Prüfen Sie die 4K IPTV Bildqualität, sehen Sie sich das Senderangebot an und überzeugen Sie sich, dass auf Ihrem Gerät und Ihrer Internetverbindung alles reibungslos läuft. Erst danach IPTV kaufen.
           </p>
         </div>
       </section>

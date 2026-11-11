@@ -45,7 +45,7 @@ export default function NotFound() {
           <div className="w-24 h-1.5 bg-[#FFCE00] mx-auto mb-8 rounded-full" />
 
           <p className="text-[#f2ebeb]/80 text-base sm:text-lg font-medium max-w-xl mx-auto mb-12 leading-relaxed">
-            Keine Sorge — diese Seite ist verloren gegangen. Der Link könnte veraltet sein oder die Adresse enthält einen Tippfehler. Nutzen Sie die Shortcuts unten, um zurück zu unserem IPTV Deutschland Service zu gelangen.
+            Keine Sorge — diese Seite ist verschollen. Möglicherweise ist der Link veraltet oder die URL enthält einen kleinen Tippfehler. Nutzen Sie die nachfolgenden Verknüpfungen, um sicher zu unserem IPTV Deutschland Angebot zurückzukehren.
           </p>
 
           {/* Quick Links Grid */}

@@ -106,7 +106,7 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 bg-[#DD0000]/20 border border-[#DD0000]/40 px-5 py-2 rounded-full mb-6 backdrop-blur-md">
             <Medal className="w-4 h-4 text-[#FFCE00]" />
             <span className="text-[#FAFAFA] font-extrabold text-xs uppercase tracking-widest flex items-center gap-2">
-              IPTV Deutschland – Bester IPTV Anbieter
+              IPTV Deutschland – Führender Streaming-Dienst
               <GermanFlag className="w-7 h-7 rounded-[2px] shrink-0" />
             </span>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-[#FAFAFA]/80 max-w-3xl mx-auto mb-10 font-medium leading-relaxed px-2">
-            IPTV Deutschland bei einem vertrauenswürdigen IPTV Anbieter: 36.000 Live TVs, 120.000 Filme, Serien, Movies, Sport und 4K IPTV Qualität auf jedem Gerät. IPTV kaufen mit Frankfurt Servern, sofortiger Aktivierung, kostenlos IPTV testen und Euro Preisen ohne Vertragslaufzeit. German IPTV und IPTV Germany für Deutschland, Austria, Schweiz.
+            Erleben Sie erstklassiges IPTV Deutschland über hochmoderne Frankfurter Server: Über 36.000 Live-Sender, 120.000 Filme, Serien, Movies und Sport in gestochen scharfer 4K IPTV Qualität für jedes Endgerät. Profitieren Sie von flexiblen Tarifen ohne Mindestlaufzeit, sofortiger Aktivierung, transparenten Euro-Preisen und der Option, unseren Service völlig risikofrei zu testen.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full max-w-md sm:max-w-xl mx-auto px-4">
@@ -173,7 +173,7 @@ export default function Home() {
               </h2>
 
               <p className="text-[#1A1A1E]/80 text-base sm:text-lg mt-6 font-semibold max-w-2xl leading-relaxed">
-                Günstig IPTV kaufen bei einem vertrauenswürdigen IPTV Anbieter Deutschland: Paket wählen, WhatsApp Einrichtung, kostenlos IPTV testen. Danach IPTV kaufen und streamen.
+                Profitieren Sie von erstklassigen Konditionen beim etablierten Anbieter für den DACH-Raum: Tarif aussuchen, bequeme WhatsApp-Einrichtung abschließen, Plattform kostenfrei ausprobieren und Ihren Zugang freischalten.
               </p>
             </div>
           </FadeIn>
@@ -195,11 +195,11 @@ export default function Home() {
                 </div>
 
                 <h3 className="text-2xl font-black text-[#f2ebeb] mb-3 uppercase tracking-tight group-hover:text-[#FFCE00] transition-colors">
-                  IPTV Deutschland Paket Auswählen
+                  Gewünschtes Streaming-Paket Wählen
                 </h3>
 
                 <p className="text-[#FAFAFA]/90 text-sm font-medium leading-relaxed mb-6">
-                  IPTV kaufen heißt Paket wählen: 1, 2 oder 3 Geräte, 3, 6 oder 12 Monate. IPTV Anbieter günstig mit 4K IPTV und Euro Preisen, inkl. MwSt., ohne Vertragslaufzeit.
+                  Entscheiden Sie sich flexibel für 1 bis 3 Geräte sowie Laufzeiten von 3, 6 oder 12 Monaten. Nutzen Sie unseren preiswerten Service inklusive aller Steuern ohne lästige Vertragspflichten.
                 </p>
 
                 <ul className="text-xs font-bold text-[#FAFAFA]/80 space-y-2.5 mb-8">
@@ -235,11 +235,11 @@ export default function Home() {
                 </div>
 
                 <h3 className="text-2xl font-black text-[#f2ebeb] mb-3 uppercase tracking-tight group-hover:text-[#FFCE00] transition-colors">
-                  IPTV Einrichtung per WhatsApp
+                  Schnelle Einrichtung per WhatsApp
                 </h3>
 
                 <p className="text-[#FAFAFA]/90 text-sm font-medium leading-relaxed mb-6">
-                  IPTV Deutschland Zugangsdaten per E-Mail (M3U / Xtream). IPTV Extreme, IBO Player, TiviMate Support per WhatsApp. IPTV TV auf Firestick, Smart TV, Android, iOS.
+                  Wir senden Ihnen die M3U- und Xtream-Zugangsdaten direkt per E-Mail zu. Dank unseres kompetenten WhatsApp-Supports ist die Konfiguration auf Firestick, Smart TVs, Android oder iOS im Handumdrehen erledigt.
                 </p>
 
                 <ul className="text-xs font-bold text-[#FAFAFA]/80 space-y-2.5 mb-8">
@@ -275,11 +275,11 @@ export default function Home() {
                 </div>
 
                 <h3 className="text-2xl font-black text-[#f2ebeb] mb-3 uppercase tracking-tight group-hover:text-[#FFCE00] transition-colors">
-                  Kostenlos IPTV Testen
+                  Risikofrei Probieren
                 </h3>
 
                 <p className="text-[#FAFAFA]/90 text-sm font-medium leading-relaxed mb-6">
-                  Kostenlos IPTV testen vor dem IPTV Kaufen: 4K IPTV, Filme, Serien, Movies, Live TV prüfen. Danach IPTV kaufen oder upgraden bei Zufriedenheit.
+                  Testen Sie unsere hervorragende 4K-Bildqualität, den umfangreichen Filmkatalog und sämtliche Live-Sender vorab völlig unverbindlich, bevor Sie sich für ein volles Abonnement entscheiden.
                 </p>
 
                 <ul className="text-xs font-bold text-[#FAFAFA]/80 space-y-2.5 mb-8">
@@ -332,7 +332,7 @@ export default function Home() {
 
         <div className="w-full max-w-3xl px-4 text-center mt-10">
           <p className="text-base md:text-lg leading-relaxed text-slate-300 font-medium">
-            4K IPTV auf dem großen Bildschirm: Filme, Serien, Movies, Live TV. IPTV Deutschland mit Frankfurt Servern, gestochen scharf, ohne Puffer. IPTV Anbieter für das beste Heimkino-Erlebnis in Deutschland, Austria und Schweiz.
+            Verwandeln Sie Ihr Wohnzimmer in ein echtes Heimkino: Genießen Sie packende Spielfilme, beliebte Serien und hochauflösendes Live-Fernsehen direkt auf Ihrem großen Bildschirm. Dank unserer stabilen Server in Frankfurt streamen Sie absolut flüssig und ohne lästige Pufferzeiten in ganz Deutschland, Österreich und der Schweiz.
           </p>
           <div className="w-full flex justify-center mt-8">
             <Link
@@ -358,7 +358,7 @@ export default function Home() {
               IPTV ANBIETER ALLE SENDER UND LIVE TV
             </h2>
             <p className="text-slate-300 font-medium text-lg">
-              IPTV Anbieter mit alle Sendern: 36.000 Live TVs, Filme, Serien, Movies, Sport. IPTV Deutschland und German IPTV mit deutschen Sendern und internationalen Kanälen. Auch IPTV Germany und IPTV Austria verfügbar.
+              Entdecken Sie unser riesiges Portfolio mit über 36.000 Live-Kanälen, Blockbustern, Serien und Sportangeboten. Perfekt optimiert für deutsche Programme sowie internationale Sender im gesamten DACH-Raum.
             </p>
           </div>
         </FadeIn>
@@ -505,7 +505,7 @@ export default function Home() {
               BESTEN IPTV ANBIETER MIT <span className="text-[#DD0000]">4K IPTV</span>
             </h2>
             <p className="text-[#0A0A0C]/80 font-semibold text-lg max-w-3xl mx-auto leading-relaxed">
-              Besten IPTV Anbieter für Deutschland, Austria, Schweiz: 4K IPTV, 36.000 Live TVs, 120.000 Filme und Serien. IPTV kaufen beim besten IPTV Anbieter auf dem Markt.
+              Erleben Sie den führenden IPTV-Anbieter für Deutschland, Österreich und die Schweiz: Gestochen scharfes 4K-Streaming, zehntausende Live-Kanäle und ein riesiges On-Demand-Archiv erwarten Sie.
             </p>
           </FadeIn>
 
@@ -517,8 +517,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21 3.582 4 8 4s8-1.79 8-4" />
                   </svg>
                 ),
-                title: '120.000 Filme und Serien',
-                desc: 'Filme, Serien, Movies: 120.000 Titel im 4K IPTV VOD Katalog. Täglich neue Filme und Serien.',
+                title: 'Umfangreiche VOD-Mediathek',
+                desc: 'Über 120.000 ausgewählte Blockbuster und Serien in brillanter 4K-Qualität, die täglich mit neuen Titeln aktualisiert wird.',
               },
               {
                 iconSvg: (
@@ -526,8 +526,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 ),
-                title: 'Anti-Freeze 4K IPTV Server',
-                desc: 'IPTV Deutschland mit Anti-Freeze Server Infrastruktur. 4K IPTV ohne Puffer bei Live TV Sport.',
+                title: 'Stabile Anti-Freeze Server',
+                desc: 'Hochperformante Serverinfrastruktur verhindert Bildabbrüche und sorgt für flüssigen Live-Sportgenuss.',
               },
               {
                 iconSvg: (
@@ -535,8 +535,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                   </svg>
                 ),
-                title: 'Frankfurt IPTV Server',
-                desc: 'IPTV Deutschland mit Frankfurt Servern. IPTV Germany, IPTV Austria, IPTV Schweiz mit unter 10ms Latenz.',
+                title: 'Rechenzentrum in Frankfurt',
+                desc: 'Lokale Serverstandorte in Frankfurt gewährleisten minimale Verzögerungen unter 10ms für den gesamten DACH-Raum.',
               },
               {
                 iconSvg: (
@@ -544,8 +544,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                   </svg>
                 ),
-                title: 'Bundesliga, Champions League, Formel 1',
-                desc: 'Live TV mit Bundesliga, Champions League, DFB-Pokal, Formel 1. IPTV Anbieter Deutschland mit alle Sender.',
+                title: 'Top-Sportevents live erleben',
+                desc: 'Verfolgen Sie Bundesliga, UEFA Champions League, DFB-Pokal und Formel 1 direkt in bester Übertragungsqualität.',
               },
               {
                 iconSvg: (
@@ -553,8 +553,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: '7-Tage EPG TV Guide',
-                desc: 'IPTV TV mit 7-Tage EPG Programmführer. Filme, Serien, Live TV mit Catch-Up Funktion.',
+                title: 'Übersichtlicher 7-Tage EPG',
+                desc: 'Integrierter Programmführer für alle Sender mit praktischer Übersicht über das aktuelle und kommende TV-Programm.',
               },
               {
                 iconSvg: (
@@ -562,8 +562,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 ),
-                title: 'Multi-Device IPTV',
-                desc: 'IPTV kaufen für Firestick, Smart TV, Android, iOS, MAG. IPTV Extreme, IBO Player, TiviMate kompatibel.',
+                title: 'Multi-Device Kompatibilität',
+                desc: 'Kompatibel mit Firestick, Smart TVs, Android, iOS und Playern wie TiviMate oder IPTV Extreme.',
               },
             ].map((item, idx) => (
               <div
@@ -604,7 +604,7 @@ export default function Home() {
               IPTV ANBIETER ALLE SENDER <span className="text-[#DD0000]">KATEGORIEN</span>
             </h2>
             <p className="text-[#0A0A0C]/80 font-semibold text-lg max-w-3xl mx-auto leading-relaxed">
-              IPTV Anbieter mit alle Sendern: Live TV, Filme, Serien, Movies, Sport, Kids. IPTV Deutschland für Deutschland, Austria, Schweiz.
+              Entdecken Sie unser riesiges Senderangebot: Live-Sport, deutsche Hauptprogramme, Blockbuster, Kinderfernsehen und internationale Spartenkanäle.
             </p>
           </FadeIn>
 
@@ -698,11 +698,11 @@ export default function Home() {
               </h3>
 
               <p className="text-base leading-relaxed text-[#FAFAFA]/90 font-medium">
-                4K IPTV kaufen heißt: IPTV Deutschland mit Frankfurt Servern. 4K IPTV und Live TV ohne Puffer, für IPTV TV auf Firestick, Smart TV, Android.
+                Sichern Sie sich erstklassiges Streaming über leistungsstarke Serverknoten in Frankfurt. Genießen Sie Fernsehen und On-Demand-Inhalte in brillanter Ultra-HD-Auflösung ohne Kompromisse.
               </p>
 
               <p className="mt-4 text-sm leading-relaxed text-[#FAFAFA]/80 font-medium">
-                IPTV kaufen mit Filme, Serien, Movies, Live TV. IPTV Germany, German IPTV, IPTV Austria, IPTV Schweiz.
+                Kompatibel mit allen gängigen Endgeräten für den optimalen Fernsehgenuss im gesamten deutschsprachigen Raum.
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -752,11 +752,11 @@ export default function Home() {
               </h3>
 
               <p className="text-base leading-relaxed text-[#FAFAFA]/90 font-medium">
-                IPTV Deutschland mit Live TV: Bundesliga, Champions League, DFB-Pokal, Formel 1. IPTV kaufen für Live TV und PPV Events.
+                Verpassen Sie kein einziges sportliches Highlight mehr: Erleben Sie alle Begegnungen der Bundesliga, UEFA Champions League sowie spannende Formel-1-Rennen live und in Echtzeit.
               </p>
 
               <p className="mt-4 text-sm leading-relaxed text-[#FAFAFA]/80 font-medium">
-                IPTV TV mit 60 FPS für Live TV und Sport. IPTV Anbieter günstig mit Live TV und PPV Kämpfen ohne Aufpreis.
+                Optimierte Bildwiederholraten von 60 FPS garantieren gestochen scharfe Bewegungsabläufe bei sämtlichen Sportübertragungen.
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -837,7 +837,7 @@ export default function Home() {
               IPTV DEUTSCHLAND VS. KABEL TV
             </h2>
             <p className="text-[#FAFAFA]/90 text-lg max-w-3xl mx-auto font-medium">
-              IPTV kaufen heißt: mehr Sender, mehr Flexibilität, weniger Kosten. IPTV Deutschland mit 36.000 Live TVs, 120.000 Filme und Serien.
+              Erfahren Sie, warum unser moderner Streaming-Dienst dem herkömmlichen Kabelfernsehen in Sachen Senderauswahl, Flexibilität und Kosten deutlich überlegen ist.
             </p>
           </FadeIn>
 
@@ -934,7 +934,7 @@ export default function Home() {
               VERTRAUT VON 15.000 <span className="text-[#DD0000]">IPTV KUNDEN</span>
             </h2>
             <p className="text-[#1A1A1E]/80 text-lg font-medium max-w-2xl mx-auto">
-              IPTV Deutschland, Austria, Schweiz. Echte IPTV Kunden aus Berlin, Hamburg, München, Wien und Zürich.
+              Erfahrungsberichte echter Anwender aus Berlin, Hamburg, München, Wien, Zürich und dem gesamten DACH-Raum.
             </p>
           </FadeIn>
 
@@ -943,19 +943,19 @@ export default function Home() {
               {
                 name: 'Thomas K.',
                 avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
-                text: 'IPTV Deutschland war einfach: 4K IPTV, Live TV, Filme, Serien. IPTV Anbieter mit Frankfurt Servern, kein Puffer bei Bundesliga. 4K IPTV Qualität wie im Kino.',
+                text: 'Dank der Frankfurter Server läuft die Bundesliga bei mir völlig ruckelfrei. Die 4K-Bildqualität ist einfach phänomenal.',
                 role: 'München',
               },
               {
                 name: 'Sabine M.',
                 avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-                text: 'IPTV Anbieter günstig mit 4K IPTV und Live TV. Kostenlos IPTV testen, dann IPTV kaufen. IPTV Deutschland Support per WhatsApp, IPTV TV Setup in 5 Minuten.',
+                text: 'Der WhatsApp-Support hat mir bei der Einrichtung sofort geholfen. Nach dem kostenlosen Test habe ich mich direkt für das Jahresabo entschieden.',
                 role: 'Hamburg',
               },
               {
                 name: 'Jens P.',
                 avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
-                text: 'Besten IPTV Anbieter Deutschland: IPTV Extreme läuft flüssig, 4K IPTV, Filme, Serien, Live TV. IPTV kaufen lohnt sich, IPTV Anbieter alle Sender verfügbar.',
+                text: 'Absolut die beste Wahl für Streaming im DACH-Raum. Die Programmauswahl ist riesig und Apps wie IPTV Extreme laufen tadellos.',
                 role: 'Berlin',
               },
             ].map((testimonial, idx) => (
@@ -1029,7 +1029,7 @@ export default function Home() {
             </h2>
 
             <p className="text-[#FAFAFA]/80 text-lg max-w-3xl mx-auto font-medium leading-relaxed">
-              IPTV Deutschland für alle Geräte. IPTV Extreme, IBO Player, TiviMate auf Firestick, Smart TV, Android, iOS. IPTV kaufen mit M3U, Xtream Codes.
+              Voll kompatibel mit gängigen Playern wie IPTV Extreme, IBO Player und TiviMate. Nutzen Sie M3U-Playlists und Xtream Codes flexibel auf all Ihren Endgeräten.
             </p>
           </FadeIn>
 
@@ -1100,7 +1100,7 @@ export default function Home() {
                 IPTV DEUTSCHLAND <span className="text-[#DD0000]">ANLEITUNGEN</span>
               </h2>
               <p className="text-[#1A1A1E]/70 text-lg font-medium max-w-2xl leading-relaxed">
-                IPTV kaufen, IPTV einrichten, IPTV Extreme nutzen. Anleitungen und Tipps für IPTV Deutschland.
+                Nützliche Tipps, Schritt-für-Schritt-Guides und Installationshilfen rund um das Thema IPTV-Streaming.
               </p>
             </div>
 
@@ -1200,7 +1200,7 @@ export default function Home() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-sm sm:text-base md:text-lg font-medium leading-relaxed text-[#1A1A1E]/80">
-                IPTV kaufen: 4K IPTV, 36.000 Live TVs, 120.000 Filme und Serien. Kostenlos IPTV testen, dann IPTV kaufen. IPTV Deutschland mit WhatsApp Einrichtung.
+                Starten Sie jetzt mit erstklassigem 4K-Streaming: Profitieren Sie von zehntausenden Live-Sendern, riesigen Mediatheken und unserem reibungslosen WhatsApp-Installationsservice.
               </p>
 
               <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">

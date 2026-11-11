@@ -117,7 +117,7 @@ export default function FreeTrialPage() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-[#FAFAFA]/80 max-w-3xl mx-auto mb-10 font-medium leading-relaxed px-2">
-            Testen Sie alles, bevor Sie einen Cent bezahlen. Kostenloser 24-Stunden IPTV Test mit 36.000 Live TVs, 120.000 Filme und Serien sowie das komplette Sportprogramm auf jedem Gerät. Unser Team richtet alles per WhatsApp ein, hilft Ihnen bei der Player-Installation und bleibt an Ihrer Seite, bis Sie auf Ihrem eigenen Fernseher streamen.
+            Prüfen Sie alles, bevor Sie einen Cent bezahlen. Der kostenlose 24-Stunden IPTV Test umfasst 36.000 Live TVs, 120.000 Filme und Serien sowie das komplette Sportprogramm auf jedem Gerät. Unser Team übernimmt die Einrichtung per WhatsApp, begleitet die Player-Installation und bleibt an Ihrer Seite, bis Sie auf Ihrem eigenen Fernseher streamen.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full max-w-md sm:max-w-xl mx-auto px-4">
@@ -169,7 +169,7 @@ export default function FreeTrialPage() {
               VOLLER ZUGRIFF, <span className="text-[#DD0000]">KEINE GRENZEN</span>
             </h2>
             <p className="text-[#0A0A0C]/75 font-semibold text-base md:text-lg leading-relaxed">
-              Der kostenlose Test gibt Ihnen den kompletten Service. Nichts ist versteckt oder gesperrt. Hier ist, was Sie im 24-Stunden-Fenster testen können.
+              Beim kostenlosen Test bekommen Sie den kompletten Service – nichts ist versteckt oder gesperrt. Das erwartet Sie im 24-Stunden-Fenster.
             </p>
           </FadeIn>
 
@@ -235,7 +235,7 @@ export default function FreeTrialPage() {
               SO STARTEN SIE IHREN <span className="text-[#FFCE00]">KOSTENLOSEN TEST</span>
             </h2>
             <p className="text-slate-300 font-medium text-base md:text-lg leading-relaxed">
-              Keine Formulare auszufüllen. Keine Kartendaten einzugeben. Schreiben Sie uns einfach per WhatsApp und unser Team übernimmt den Rest.
+              Keine Formulare, keine Kartendaten. Schreiben Sie uns einfach per WhatsApp – unser Team übernimmt den Rest.
             </p>
           </FadeIn>
 
@@ -245,7 +245,7 @@ export default function FreeTrialPage() {
                 number: '01',
                 icon: MessageCircle,
                 title: 'Per WhatsApp Melden',
-                desc: 'Senden Sie uns eine kurze Nachricht, dass Sie den kostenlosen 24-Stunden-Test möchten. Das ist alles, was Sie tun müssen, um zu starten.',
+                desc: 'Schreiben Sie uns kurz, dass Sie den kostenlosen 24-Stunden-Test nutzen möchten. Mehr ist nicht nötig, um zu starten.',
                 bullets: [
                   'Keine Kartendaten erforderlich',
                   'Kein Registrierungsformular',
@@ -256,7 +256,7 @@ export default function FreeTrialPage() {
                 number: '02',
                 icon: Smartphone,
                 title: 'Player Installieren',
-                desc: 'Wir senden eine kurze Anleitung für Ihr Gerät. Installieren Sie IPTV Extreme, IBO Player Pro oder TiviMate und fügen Sie die Testdaten ein, die wir senden.',
+                desc: 'Wir schicken eine kurze Anleitung für Ihr Gerät. Installieren Sie IPTV Extreme, IBO Player Pro oder TiviMate und tragen Sie die Testdaten ein, die wir Ihnen senden.',
                 bullets: [
                   'Funktioniert auf Firestick, Smart TV, Smartphone',
                   'Wir helfen bei der App-Auswahl',
@@ -267,7 +267,7 @@ export default function FreeTrialPage() {
                 number: '03',
                 icon: KeyRound,
                 title: 'Einloggen und Testen',
-                desc: 'Geben Sie den Test-Code im Player ein und die komplette Senderliste lädt automatisch. Prüfen Sie Sender, Filme, Sport und 4K IPTV Bild.',
+                desc: 'Tragen Sie den Test-Code im Player ein – die komplette Senderliste lädt automatisch. Prüfen Sie Sender, Filme, Sport und 4K IPTV Bild.',
                 bullets: [
                   'Voller Zugriff für 24 Stunden',
                   'Test auf Ihrer eigenen Internetverbindung',
@@ -345,7 +345,7 @@ export default function FreeTrialPage() {
               ERST TESTEN, DANN <span className="text-[#DD0000]">IPTV KAUFEN</span>
             </h2>
             <p className="text-[#0A0A0C]/75 font-semibold text-base md:text-lg leading-relaxed">
-              Nicht jeder IPTV Service funktioniert auf jeder Internetverbindung und jedem Gerät gleich. Der Test lässt Sie selbst überprüfen, auf Ihrem eigenen Setup, bevor Sie einen Cent ausgeben.
+              Nicht jeder IPTV Service läuft auf jeder Internetverbindung und jedem Gerät gleich. Der Test lässt Sie Ihr eigenes Setup prüfen, bevor Sie einen Cent ausgeben.
             </p>
           </FadeIn>
 
@@ -354,7 +354,7 @@ export default function FreeTrialPage() {
               {
                 icon: Zap,
                 title: 'Prüfen Sie Ihre Geschwindigkeit',
-                desc: 'Sehen Sie, wie die Streams auf Ihrer tatsächlichen Internetverbindung funktionieren – nicht auf einem Demo-Video.',
+                desc: 'Sehen Sie, wie die Streams auf Ihrer tatsächlichen Internetverbindung laufen – nicht auf einem Demo-Video.',
               },
               {
                 icon: Tv,
@@ -364,7 +364,7 @@ export default function FreeTrialPage() {
               {
                 icon: Trophy,
                 title: 'Live-Sport Ansehen',
-                desc: 'Wenn während Ihres 24-Stunden-Fensters ein Spiel läuft, schauen Sie live und sehen Sie, wie der Stream unter Spitzenlast läuft.',
+                desc: 'Läuft während Ihres 24-Stunden-Fensters ein Spiel, schauen Sie live und erleben Sie, wie der Stream unter Spitzenlast läuft.',
               },
               {
                 icon: CreditCard,
@@ -475,7 +475,7 @@ export default function FreeTrialPage() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-sm sm:text-base md:text-lg font-medium leading-relaxed text-[#1A1A1E]/80">
-                Schreiben Sie uns per WhatsApp und wir richten Ihnen in wenigen Minuten den kostenlosen 24-Stunden-Test ein. Testen Sie den vollen Service auf Ihrem eigenen Fernseher und upgraden Sie erst, wenn Sie zufrieden sind. Keine Vertragslaufzeit, keine Kartendaten, kein Druck.
+                Schreiben Sie uns per WhatsApp – wir richten Ihnen in wenigen Minuten den kostenlosen 24-Stunden-Test ein. Prüfen Sie den vollen Service auf Ihrem eigenen Fernseher und upgraden Sie erst, wenn Sie zufrieden sind. Keine Vertragslaufzeit, keine Kartendaten, kein Druck.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto">

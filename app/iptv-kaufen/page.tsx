@@ -119,7 +119,7 @@ export default function IPTVKaufenPage() {
             </h1>
 
             <p className="text-base md:text-lg text-slate-300 max-w-xl mb-8 font-medium leading-relaxed">
-              Sie möchten IPTV kaufen und sind unsicher, worauf Sie achten müssen? Bei uns kaufen Sie IPTV in Deutschland ohne Vertragslaufzeit, mit geführtem WhatsApp-Setup, kostenlosem 24-Stunden-Test und Preisen in Euro – inklusive MwSt.
+              Sie möchten IPTV kaufen und sind unsicher, worauf Sie achten sollten? Bei uns kaufen Sie IPTV in Deutschland ganz ohne Vertragsbindung – mit geführtem WhatsApp-Setup, kostenlosem 24-Stunden-Test und Euro-Preisen inklusive MwSt.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -214,7 +214,7 @@ export default function IPTVKaufenPage() {
               4 Gründe, warum immer mehr Deutsche <span className="text-[#DD0000]">IPTV kaufen</span>
             </h2>
             <p className="text-slate-300 font-medium text-base md:text-lg leading-relaxed">
-              Kabel und Satellit werden jedes Jahr teurer. IPTV bietet mehr Sender, bessere Qualität und volle Flexibilität – zu einem Bruchteil des Preises.
+              Kabel und Satellit werden jedes Jahr teurer. IPTV liefert mehr Sender, bessere Qualität und volle Flexibilität – zu einem Bruchteil des Preises.
             </p>
           </FadeIn>
 

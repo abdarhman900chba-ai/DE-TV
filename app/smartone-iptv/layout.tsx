@@ -278,7 +278,7 @@ const SmartOnePageSchema = () => {
             name: 'Was ist SmartOne IPTV?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'SmartOne IPTV ist ein Premium-Streaming-Service, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung liefert. In Deutschland bietet unser SmartOne IPTV Service 36.000+ Live TVs und 120.000+ Filme und Serien in 4K IPTV Ultra HD – mit geführtem WhatsApp Setup und Preisen in Euro.',
+              text: 'SmartOne IPTV ist ein Premium-Streaming-Dienst, der Live-TV-Sender, Filme und Serien über Ihre Internetverbindung liefert. In Deutschland bietet unser SmartOne IPTV Service 36.000+ Live TVs und 120.000+ Filme und Serien in 4K IPTV Ultra HD – mit geführtem WhatsApp Setup und Preisen in Euro.',
             },
           },
           {
@@ -286,7 +286,7 @@ const SmartOnePageSchema = () => {
             name: 'Wie viel kostet SmartOne IPTV in Deutschland?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'SmartOne IPTV Pakete starten bei 39 € für 3 Monate auf 1 Gerät. Das 12-Monats-VIP Paket kostet 79 € und spart bis zu 50%. Multi-Screen Pakete sind für 2 oder 3 Geräte zu Hause verfügbar.',
+              text: 'SmartOne IPTV Pakete beginnen bei 39 € für 3 Monate auf 1 Gerät. Das 12-Monats-VIP Paket kostet 79 € und spart bis zu 50%. Multi-Screen Pakete sind für 2 oder 3 Geräte im Haushalt verfügbar.',
             },
           },
           {
@@ -294,7 +294,7 @@ const SmartOnePageSchema = () => {
             name: 'Gibt es einen kostenlosen Test für SmartOne IPTV?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Ja. Schreiben Sie uns per WhatsApp und wir richten Ihnen einen kostenlosen 24-Stunden SmartOne IPTV Test ein. Testen Sie das 4K IPTV Bild, prüfen Sie das Senderangebot und stellen Sie sicher, dass alles reibungslos auf Ihrem Gerät läuft, bevor Sie auf ein bezahltes Paket upgraden.',
+              text: 'Ja. Schreiben Sie uns per WhatsApp, und wir richten Ihnen einen kostenlosen 24-Stunden SmartOne IPTV Test ein. Prüfen Sie das 4K IPTV Bild, sehen Sie sich das Senderangebot an und überzeugen Sie sich, dass auf Ihrem Gerät alles flüssig läuft, bevor Sie auf ein bezahltes Paket upgraden.',
             },
           },
           {
@@ -302,7 +302,7 @@ const SmartOnePageSchema = () => {
             name: 'Welche Geräte funktionieren mit SmartOne IPTV?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'SmartOne IPTV funktioniert auf Amazon Firestick, Samsung und LG Smart TVs, Android TV, Google TV, Apple TV, iPhone, iPad, Windows PC, Mac und MAG oder Formuler Set-Top-Boxen. Unser Team hilft Ihnen bei der Installation und Konfiguration einer App wie IPTV Extreme oder IBO Player Pro per WhatsApp.',
+              text: 'SmartOne IPTV funktioniert auf Amazon Firestick, Samsung und LG Smart TVs, Android TV, Google TV, Apple TV, iPhone, iPad, Windows PC, Mac und MAG oder Formuler Set-Top-Boxen. Unser Team unterstützt Sie bei Installation und Konfiguration einer App wie IPTV Extreme oder IBO Player Pro – per WhatsApp.',
             },
           },
           {
@@ -310,7 +310,7 @@ const SmartOnePageSchema = () => {
             name: 'Brauche ich ein VPN für SmartOne IPTV in Deutschland?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Ein VPN ist nicht erforderlich. Unsere SmartOne IPTV Server sind für deutsche, österreichische und schweizerische ISPs optimiert, um reibungsloses, pufferfreies Streaming auf Ihrer Heimverbindung zu liefern.',
+              text: 'Ein VPN ist nicht erforderlich. Unsere SmartOne IPTV Server sind auf deutsche, österreichische und schweizerische ISPs abgestimmt, damit Sie auf Ihrer Heimverbindung reibungslos und pufferfrei streamen können.',
             },
           },
           {
@@ -318,7 +318,7 @@ const SmartOnePageSchema = () => {
             name: 'Wie schnell ist das SmartOne IPTV Setup?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Die meisten Kunden streamen innerhalb von 10 Minuten. Sie wählen Ihr Paket, schreiben uns per WhatsApp und unser Team begleitet Sie Schritt für Schritt durch die Installation, bis alles funktioniert.',
+              text: 'Die meisten Kunden streamen innerhalb von 10 Minuten. Sie wählen Ihr Paket, schreiben uns auf WhatsApp, und unser Team begleitet Sie Schritt für Schritt durch die Installation, bis alles reibungslos funktioniert.',
             },
           },
           {
@@ -326,7 +326,7 @@ const SmartOnePageSchema = () => {
             name: 'Kann ich SmartOne IPTV auf mehreren TVs gleichzeitig nutzen?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Ja. Wählen Sie beim Checkout das 2-Screen- oder 3-Screen-Paket und mehrere Haushaltsmitglieder können gleichzeitig unterschiedliche Inhalte ohne Unterbrechung schauen.',
+              text: 'Ja. Entscheiden Sie sich beim Checkout für das 2-Screen- oder 3-Screen-Paket, und mehrere Haushaltsmitglieder können gleichzeitig unterschiedliche Inhalte ohne Unterbrechung ansehen.',
             },
           },
           {

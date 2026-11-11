@@ -2,9 +2,6 @@
 import type { Metadata } from 'next';
 import { CONSTANTS } from '@/lib/seo';
 
-// ---------------------------------------------------------------------------
-// SEO SAFETY HELPERS
-// ---------------------------------------------------------------------------
 const clampTitle = (s: string, max = 60): string =>
   s.length <= max ? s : s.slice(0, max - 1).trimEnd() + '…';
 
@@ -15,20 +12,14 @@ const SITE_URL = CONSTANTS.SITE_URL;
 const BRAND = CONSTANTS.BRAND_NAME;
 const PAGE_URL = `${SITE_URL}/einrichtung`;
 
-// ---------------------------------------------------------------------------
-// SEO STRINGS — Locked (Title 50–59, Desc 130–160)
-// ---------------------------------------------------------------------------
 const PAGE_TITLE = clampTitle(
-  `IPTV Deutschland Setup | Firestick, Smart TV & Mobil`
+  `Setup | Firestick, Smart TV & Mobil`
 );
 
 const PAGE_DESCRIPTION = clampDescription(
-  `IPTV Deutschland Setup für Firestick, Smart TV, Android & iOS. IPTV Extreme in 10 Min installieren – WhatsApp Hilfe, gratis Test.`
+  `Setup für Firestick, Smart TV, Android & iOS. Player in 10 Min installieren – WhatsApp Hilfe, gratis Test.`
 );
 
-// ---------------------------------------------------------------------------
-// METADATA
-// ---------------------------------------------------------------------------
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -88,37 +79,19 @@ export const metadata: Metadata = {
   },
   category: 'entertainment',
   keywords: [
-    'iptv deutschland setup',
-    'iptv firestick einrichtung deutschland',
-    'iptv smart tv installieren deutschland',
-    'iptv extreme setup',
-    'ibo player pro einrichtung',
-    'besten iptv anbieter',
-    'iptv deutschland',
-    'iptv kaufen',
-    'iptv installation deutschland',
-    'iptv einrichten anleitung',
-    'iptv firestick deutschland',
-    'iptv android tv einrichtung',
-    'iptv apple tv installieren',
-    'iptv mag box setup',
-    'iptv xtream codes einrichtung',
-    'iptv m3u playlist anleitung',
-    'smart tv iptv app deutschland',
-    'kostenlos iptv testen',
-    'iptv ohne vertragslaufzeit',
-    'bundesliga iptv live',
+    'setup',
+    'firestick einrichtung',
+    'smart tv installieren',
+    'player setup',
+    'einrichtung anleitung',
+    'kostenlos testen',
   ],
 };
 
-// ---------------------------------------------------------------------------
-// JSON-LD SCHEMA — HowTo + FAQPage + Breadcrumbs
-// ---------------------------------------------------------------------------
 const SetupPageSchema = () => {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      // BRAND ENTITY
       {
         '@type': 'Organization',
         '@id': `${SITE_URL}/#organization`,
@@ -139,13 +112,11 @@ const SetupPageSchema = () => {
         },
         sameAs: Object.values(CONSTANTS.SOCIALS ?? {}),
       },
-
-      // HOW TO SCHEMA — German
       {
         '@type': 'HowTo',
         '@id': `${PAGE_URL}/#howto`,
-        name: `IPTV Deutschland Setup auf jedem Gerät`,
-        description: `Komplette Schritt-für-Schritt Installationsanleitung für ${BRAND} auf Firestick, Smart TV, Android, Apple TV und PC oder Mac. Geführtes WhatsApp Setup und ein kostenloser 24-Stunden IPTV Test.`,
+        name: `Setup auf jedem Gerät`,
+        description: `Komplette Schritt-für-Schritt Installationsanleitung für ${BRAND} auf Firestick, Smart TV, Android, Apple TV und PC oder Mac. Geführtes WhatsApp Setup und ein kostenloser Test.`,
         totalTime: 'PT10M',
         estimatedCost: {
           '@type': 'MonetaryAmount',
@@ -165,17 +136,17 @@ const SetupPageSchema = () => {
           },
           {
             '@type': 'HowToSupply',
-            name: 'Stabile Internetverbindung (mindestens 15 Mbit/s, 30 Mbit/s für 4K IPTV)',
+            name: 'Stabile Internetverbindung',
           },
           {
             '@type': 'HowToSupply',
-            name: `Aktives ${BRAND} Abonnement oder kostenloser IPTV Test`,
+            name: `Aktives ${BRAND} Abonnement oder kostenloser Test`,
           },
         ],
         tool: [
           {
             '@type': 'HowToTool',
-            name: 'IPTV Extreme oder IBO Player Pro (empfohlene IPTV Player)',
+            name: 'Player',
           },
           {
             '@type': 'HowToTool',
@@ -186,52 +157,50 @@ const SetupPageSchema = () => {
           {
             '@type': 'HowToStep',
             position: 1,
-            name: 'IPTV Deutschland Paket Wählen',
-            text: `Besuchen Sie die Preise Seite und wählen Sie ein ${BRAND} Abonnement. Wählen Sie 3, 6 oder 12 Monate mit 1, 2 oder 3 gleichzeitigen Geräten. Alle Preise in Euro (inkl. MwSt.).`,
+            name: 'Paket Wählen',
+            text: `Besuchen Sie die Preise Seite und wählen Sie ein ${BRAND} Abonnement.`,
             url: `${SITE_URL}/preise`,
           },
           {
             '@type': 'HowToStep',
             position: 2,
             name: 'Support per WhatsApp Kontaktieren',
-            text: 'Schreiben Sie unserem Team per WhatsApp. Wir bestätigen den Preis in Euro, senden einen sicheren Zahlungslink und begleiten Sie durch das gesamte IPTV Deutschland Setup.',
+            text: 'Schreiben Sie unserem Team per WhatsApp für schnelle Hilfe und Setup.',
             url: CONSTANTS.CONTACT?.whatsappUrl || '#',
           },
           {
             '@type': 'HowToStep',
             position: 3,
-            name: 'IPTV Extreme oder IBO Player Pro Installieren',
-            text: 'Installieren Sie IPTV Extreme oder IBO Player Pro, zwei der schnellsten und stabilsten IPTV Player für Firestick, Smart TVs, Apple Geräte und PC oder Mac.',
+            name: 'Player Installieren',
+            text: 'Installieren Sie den Player auf Ihrem Gerät.',
             url: 'https://iboplayer.pro/',
           },
           {
             '@type': 'HowToStep',
             position: 4,
             name: 'Auto oder Manuelles Setup Wählen',
-            text: 'Wählen Sie Auto Setup, bei dem unser Team remote mit Ihrem Device Key aktiviert, oder Manuelles Setup, bei dem Sie die M3U URL oder Xtream Codes eingeben, die wir Ihnen per WhatsApp senden.',
+            text: 'Wählen Sie Auto Setup oder manuelle Eingabe.',
           },
           {
             '@type': 'HowToStep',
             position: 5,
-            name: 'Inhalte in 1 bis 2 Minuten Laden',
-            text: 'Nach der Aktivierung lädt IPTV Extreme oder IBO Player Pro automatisch Ihre komplette Senderliste, Filme und Serien Bibliothek und den 7-Tage EPG.',
+            name: 'Inhalte Laden',
+            text: 'Nach der Aktivierung lädt der Player Ihre Inhalte automatisch.',
           },
           {
             '@type': 'HowToStep',
             position: 6,
-            name: 'Kostenlos IPTV Testen',
-            text: 'Testen Sie alles im kostenlosen 24-Stunden IPTV Test. Prüfen Sie Bildqualität, Sportangebot und Wiedergabe auf Ihrem Gerät, bevor Sie auf ein bezahltes Paket upgraden.',
+            name: 'Kostenlos Testen',
+            text: 'Testen Sie alles im kostenlosen Test.',
           },
           {
             '@type': 'HowToStep',
             position: 7,
-            name: 'IPTV Deutschland Streaming Starten',
-            text: 'Genießen Sie sofortigen Zugriff auf 36.000 Live TVs und 120.000 Filme und Serien in 4K IPTV Qualität. Sportabdeckung umfasst Bundesliga, Champions League, DFB-Pokal, Formel 1 und DEL.',
+            name: 'Streaming Starten',
+            text: 'Genießen Sie sofortigen Zugriff auf Inhalte.',
           },
         ],
       },
-
-      // FAQ SCHEMA — German
       {
         '@type': 'FAQPage',
         '@id': `${PAGE_URL}/#faq`,
@@ -241,23 +210,23 @@ const SetupPageSchema = () => {
             name: 'Wie erhalte ich meine Zugangsdaten nach dem Kauf?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Alles wird live per WhatsApp geregelt. Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, sendet unser Team Ihre Setup-Details direkt im Chat – normalerweise innerhalb weniger Minuten.',
+              text: 'Alles wird live per WhatsApp geregelt. Sobald Sie Ihr Paket bestätigen und die Zahlung abschließen, sendet unser Team Ihre Setup-Details direkt im Chat.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Welchen IPTV Player empfehlen Sie?',
+            name: 'Welchen Player empfehlen Sie?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `Wir empfehlen IPTV Extreme und IBO Player Pro für das schnellste Zappen, den niedrigsten RAM-Verbrauch und die beste 4K-Leistung auf Firestick, Smart TVs, Apple Geräten und PC oder Mac. Beide gehören zu unseren Top-Empfehlungen.`,
+              text: `Wir empfehlen unsere Top-Player für das schnellste Zappen und die beste Leistung.`,
             },
           },
           {
             '@type': 'Question',
-            name: 'Muss ich IPTV Extreme oder IBO Player Pro separat aktivieren?',
+            name: 'Muss ich den Player separat aktivieren?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Der Aktivierungsservice ist bei jedem Abonnement kostenlos inklusive. Wählen Sie Auto Setup, wo Sie uns Ihren Device Key senden und wir remote aktivieren, oder Manuelles Setup, wo Sie M3U oder Xtream Codes selbst eingeben.',
+              text: 'Der Aktivierungsservice ist bei jedem Abonnement kostenlos inklusive.',
             },
           },
           {
@@ -265,7 +234,7 @@ const SetupPageSchema = () => {
             name: 'Wie lange dauert das komplette Setup?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Die meisten Kunden streamen innerhalb von 10 Minuten. Die Installation von IPTV Extreme oder IBO Player Pro dauert etwa 2 Minuten, die Aktivierung 1 bis 2 Minuten und das Laden der Inhalte 1 bis 2 Minuten.',
+              text: 'Die meisten Kunden streamen innerhalb von 10 Minuten.',
             },
           },
           {
@@ -273,37 +242,35 @@ const SetupPageSchema = () => {
             name: 'Kann ich meine Zugangsdaten auf mehreren Geräten verwenden?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Ja, Sie können die App auf unbegrenzt vielen Geräten installieren. Die Anzahl der gleichzeitigen Streams hängt von Ihrem Paket ab – 1 Gerät für Standard, 2 oder 3 Geräte für Multi-Room.',
+              text: 'Ja, Sie können die App auf unbegrenzt vielen Geräten installieren.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Was tun, wenn ich einen Login-Fehler in IPTV Extreme bekomme?',
+            name: 'Was tun, wenn ich einen Login-Fehler bekomme?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Bestätigen Sie, dass Sie die Xtream Codes API Methode ausgewählt haben, nicht M3U, und dass keine zusätzlichen Leerzeichen in Benutzername oder Passwort sind. Wenn das Problem weiterhin besteht, schreiben Sie uns per WhatsApp – die meisten Probleme lösen sich innerhalb von 2 Minuten.',
+              text: 'Bestätigen Sie die Eingabe oder schreiben Sie uns per WhatsApp.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Welche Internetgeschwindigkeit brauche ich für 4K IPTV Streaming?',
+            name: 'Welche Internetgeschwindigkeit brauche ich?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Für 4K Ultra HD empfehlen wir mindestens 30 Mbit/s. Full HD 1080p läuft reibungslos mit 15 Mbit/s. Die Anti-Freeze Server Technologie passt sich automatisch an Ihre Verbindungsgeschwindigkeit an.',
+              text: 'Für 4K Ultra HD empfehlen wir mindestens 30 Mbit/s.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Benötige ich ein VPN für IPTV Deutschland?',
+            name: 'Benötige ich ein VPN?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Nein, unsere Server in Frankfurt sind optimiert und sicher. Falls Ihr Internetanbieter während der Stoßzeiten Streaming-Drosselung anwendet, können Sie ein VPN ohne Probleme aktivieren.',
+              text: 'Nein, unsere Server sind optimiert und sicher.',
             },
           },
         ],
       },
-
-      // BREADCRUMBS — German
       {
         '@type': 'BreadcrumbList',
         '@id': `${PAGE_URL}/#breadcrumb`,
@@ -317,7 +284,7 @@ const SetupPageSchema = () => {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'IPTV Deutschland Einrichtung',
+            name: 'Einrichtung',
             item: PAGE_URL,
           },
         ],
@@ -335,18 +302,16 @@ const SetupPageSchema = () => {
   );
 };
 
-// ---------------------------------------------------------------------------
-// RESPONSIVE SETUP LAYOUT
-// ---------------------------------------------------------------------------
 export default function SetupLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full overflow-x-hidden min-h-screen flex flex-col bg-[#0a0a0c] text-[#FFFFFF]">
+    <div className="w-full overflow-x-hidden min-h-screen flex flex-col bg-[#0a0a0c] text-white">
       <SetupPageSchema />
       <main className="flex-grow w-full">{children}</main>
     </div>
   );
 }
+```[cite: 11]

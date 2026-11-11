@@ -2,20 +2,25 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
+
+  // هذا هو الحل الصحيح: يظهر الرابط للزائر ولغوغل بـ /de/ ولكن الملف الحقيقي يعمل من المسار الأصلي دون 404
+  async rewrites() {
+    return [
+      {
+        source: '/de/:path*',
+        destination: '/:path*',
+      },
+    ];
   },
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  // Allow access to remote image placeholder.
+
   images: {
+    unoptimized: true, // لإيقاف استهلاك Vercel للصور نهائياً
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'picsum.photos',
         port: '',
-        pathname: '/**', // This allows any path under the hostname
+        pathname: '/**',
       },
       {
         protocol: 'https',
@@ -25,11 +30,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
   output: 'standalone',
   transpilePackages: ['motion'],
   webpack: (config, {dev}) => {
-    // HMR is disabled in AI Studio via DISABLE_HMR env var.
-    // Do not modify—file watching is disabled to prevent flickering during agent edits.
     if (dev && process.env.DISABLE_HMR === 'true') {
       config.watchOptions = {
         ignored: /.*/,

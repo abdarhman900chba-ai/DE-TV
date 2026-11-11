@@ -680,7 +680,7 @@ export default function ResellerPage() {
 
         <FadeIn className="mt-12 text-center">
           <p className="text-[#FFFFFF]/60 text-sm font-bold">
-            Benötigen Sie größere Mengen? Schreiben Sie unserem Team per WhatsApp für Großhandelspreise bei 100+ Credits.
+            Sie benötigen größere Mengen? Schreiben Sie unserem Team per WhatsApp für Großhandelspreise ab 100+ Credits.
           </p>
         </FadeIn>
       </section>
